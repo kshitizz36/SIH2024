@@ -8,9 +8,9 @@ import pickle
 import concurrent.futures
 import matplotlib.pyplot as plt
 
-# Load the ocean shapefile
+# Load the ocean shapefiless
 print("Loading ocean shapefile...")
-ocean_shapefile = gpd.read_file('coastline/prototype.shp')
+ocean_shapefile = gpd.read_file('CoastlineData/prototype.shp')
 
 # Define the bounding box for the Indian Ocean (Approximate coordinates)
 indian_ocean_bounds = Polygon([
@@ -52,7 +52,7 @@ def generate_grid_points(polygon, spacing):
     return points
 
 # Grid spacing (distance between points)
-grid_spacing = 1  # Adjust as needed for denser or sparser grid
+grid_spacing = 0.3  # Adjust as needed for denser or sparser grid
 
 # Generate grid points for each polygon in the clipped shapefile
 print(f"Generating grid points within each polygon with spacing {grid_spacing}...")

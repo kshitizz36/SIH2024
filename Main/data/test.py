@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 
 # Load the graph from the pickle file
-with open('indian_ocean_graph.pickle', 'rb') as f:
+with open('MainGraph.pickle', 'rb') as f:
     G = pickle.load(f)
 
 # A* Algorithm Implementation
