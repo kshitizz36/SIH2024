@@ -1,17 +1,18 @@
 import osmnx as ox
 import networkx as nx
-import folium
 import geopandas as gpd
 import numpy as np
-from shapely.geometry import Point, Polygon, MultiPolygon, LineString
+from shapely.geometry import Point, Polygon, MultiPolygon
 import pickle
 import concurrent.futures
 import matplotlib.pyplot as plt
-import pygrib  # Import pygrib to read GRIB2 data
+import pygrib
+import mplcursors
+import threading
 
 # Load the ocean shapefile
 print("Loading ocean shapefile...")
-ocean_shapefile = gpd.read_file('coastline/prototype.shp')
+ocean_shapefile = gpd.read_file('CoastlineData/prototype.shp')
 
 # Define the bounding box for the Indian Ocean (Approximate coordinates)
 indian_ocean_bounds = Polygon([
@@ -53,7 +54,7 @@ def generate_grid_points(polygon, spacing):
     return points
 
 # Grid spacing (distance between points)
-grid_spacing = 1  # Adjust as needed for denser or sparser grid
+grid_spacing = 2  # Adjust as needed for denser or sparser grid
 
 # Generate grid points for each polygon in the clipped shapefile
 print(f"Generating grid points within each polygon with spacing {grid_spacing}...")
@@ -66,36 +67,6 @@ for poly in indian_ocean_clip.geometry:
         for sub_poly in poly.geoms:  # Iterate over each polygon in the MultiPolygon
             points = generate_grid_points(sub_poly, grid_spacing)
             all_points.extend(points)
-
-# Add environmental data (e.g., wind speed, ocean currents) to each point
-# Load the GRIB2 file containing environmental data
-grb_file = 'path_to_your_grb2_file.grb2'
-grbs = pygrib.open(grb_file)
-
-# Example: Extract surface wind speed (u and v components)
-u_wind = grbs.select(name='10 metre U wind component')[0]
-v_wind = grbs.select(name='10 metre V wind component')[0]
-
-# Extract data values
-u_data = u_wind.values
-v_data = v_wind.values
-
-# Get the lat/lon grid
-lats, lons = u_wind.latlons()
-
-# Calculate the magnitude of wind speed
-wind_speed = np.sqrt(u_data**2 + v_data**2)
-
-# Close the GRIB file
-grbs.close()
-
-# Add environmental data as node attributes
-print("Adding environmental data to nodes...")
-for point in all_points:
-    lat, lon = point
-    idx = np.argmin(np.sqrt((lats - lat)**2 + (lons - lon)**2))
-    wind_speed_at_point = wind_speed.flat[idx]
-    G.add_node(point, pos=point, wind_speed=wind_speed_at_point)
 
 # Create a graph from the points
 G = nx.Graph()
@@ -112,10 +83,7 @@ def add_edges_for_point(i, point1):
         point2 = all_points[j]
         distance = np.sqrt((point1[0] - point2[0]) ** 2 + (point1[1] - point2[1]) ** 2)
         if distance <= radius:
-            # Adjust the weight based on environmental data
-            wind_factor = (G.nodes[point1]['wind_speed'] + G.nodes[point2]['wind_speed']) / 2
-            weight = distance * (1 + wind_factor)  # Example adjustment, modify as needed
-            edges.append((point1, point2, weight))
+            edges.append((point1, point2, distance))
     return edges
 
 # Add edges based on spatial proximity using multithreading
@@ -138,14 +106,68 @@ for edge in edges:
 
 print("\nEdge generation completed.")
 
-# Save the graph as a pickle file
-print("Saving the graph as a pickle file...")
-with open('indian_ocean_graph.pickle', 'wb') as f:
-    pickle.dump(G, f)
-print("Graph saved as 'indian_ocean_graph.pickle'.")
+# Load the GRIB2 file and extract wind data
+grib_file = 'ForecastData/combined_output.grb2'
+print(f"Opening GRIB2 file: {grib_file}")
+grbs = pygrib.open(grib_file)
 
-# Plotting the graph using Matplotlib
-print("Plotting the graph...")
+# Initialize progress variables
+total_grbs = len(grbs)
+processed_grbs = 0
+progress_lock = threading.Lock()
+
+# Function to add wind data to graph nodes
+def add_wind_data(grb):
+    global processed_grbs
+
+    param_name = grb.parameterName
+
+    if param_name in ['u-component of wind', 'v-component of wind']:
+        forecast_hour = grb.forecastTime
+        data_values = grb.values
+        lats, lons = grb.latlons()
+
+        # Assign the nearest available wind data to the graph nodes
+        for node in G.nodes():
+            lat, lon = node
+            # Find the closest index in the GRIB data
+            lat_idx = (np.abs(lats - lat)).argmin()
+            lon_idx = (np.abs(lons - lon)).argmin()
+
+            # Ensure indices are within valid range
+            lat_idx = max(0, min(lat_idx, lats.shape[0] - 1))
+            lon_idx = max(0, min(lon_idx, lons.shape[1] - 1))
+
+            # Store the wind data in the node's attribute
+            if 'wind_data' not in G.nodes[node]:
+                G.nodes[node]['wind_data'] = {}
+            
+            if forecast_hour not in G.nodes[node]['wind_data']:
+                G.nodes[node]['wind_data'][forecast_hour] = {}
+
+            G.nodes[node]['wind_data'][forecast_hour][param_name] = data_values[lat_idx, lon_idx]
+
+    # Update and print progress
+    with progress_lock:
+        processed_grbs += 1
+        progress = (processed_grbs / total_grbs) * 100
+        print(f"\rAdding GRIB data to graph: {progress:.2f}% completed", end="")
+
+# Parallelize the wind data addition process
+with concurrent.futures.ThreadPoolExecutor() as executor:
+    futures = list(executor.map(add_wind_data, grbs))
+
+grbs.close()
+
+# Save the graph as a pickle file with wind data
+print("\nSaving the graph with wind data as a pickle file...")
+with open('indian_ocean_graph_with_wind.pickle', 'wb') as f:
+    pickle.dump(G, f)
+print("Graph saved as 'indian_ocean_graph_with_wind.pickle'.")
+
+# Plotting the graph using Matplotlib with tooltips
+print("Plotting the graph with tooltips...")
+
 plt.figure(figsize=(12, 8))
 
 # Get positions from node attributes
@@ -154,6 +176,25 @@ pos = nx.get_node_attributes(G, 'pos')
 # Draw the nodes and edges
 nx.draw(G, pos, node_size=10, node_color='red', edge_color='blue', with_labels=False, font_weight='bold', alpha=0.7)
 
-# Show the plot
-plt.title("Graph of Indian Ocean Nodes and Edges")
+# Add tooltips using mplcursors
+cursor = mplcursors.cursor(hover=True)
+
+@cursor.connect("add")
+def on_add(sel):
+    node = sel.index
+    node_data = G.nodes[list(G.nodes)[node]]
+    lat, lon = node_data['pos']
+    tooltip_text = f"Location: ({lat}, {lon})\n"
+    
+    wind_data = node_data.get('wind_data', {})
+    for forecast_hour, data in wind_data.items():
+        tooltip_text += f"Hour {forecast_hour}:\n"
+        for param, value in data.items():
+            tooltip_text += f"{param}: {value:.2f} m/s\n"
+
+    sel.annotation.set_text(tooltip_text)
+    sel.annotation.get_bbox_patch().set(fc="yellow", alpha=0.8)
+
+# Show the plot with tooltips
+plt.title("Graph of Indian Ocean Nodes and Edges with Wind Data")
 plt.show()
