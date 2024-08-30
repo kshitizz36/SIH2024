@@ -43,7 +43,7 @@ ship_load = input_data['ship']['Load']
 ship_beam = input_data['ship']['Beam']
 
 # Load the graph with wind data from the pickle file
-with open('indian_ocean_graph_with_wind.pickle', 'rb') as f:
+with open('/home/cryptodarth/Cryptd/Smart-India-Hackathon-2024/Main/data/indian_ocean_graph_with_wind.pickle', 'rb') as f:
     G = pickle.load(f)
 
 # Base speed in knots (from ship data)
@@ -231,48 +231,41 @@ def find_nearest_node(G, coord):
             min_dist = dist
     return closest_node
 
-# Use start and end coordinates from JSON input
-source_node = find_nearest_node(G, start_port)
-destination_node = find_nearest_node(G, end_port)
+def main():
 
-# Get the shortest path using the enhanced A* algorithm considering wind, ship factors, and avoiding land
-shortest_path, cumulative_times, fuel_consumed = astar_path(G, source_node, destination_node, base_speed, start_time, ship_displ, ship_power, ship_load, ship_beam)
+    source_node = find_nearest_node(G, start_port)
+    destination_node = find_nearest_node(G, end_port)
 
-# Calculate final travel time and ETA
-final_time = cumulative_times[-1] if cumulative_times else 0  # Final cumulative time in hours
+    # Get the shortest path using the enhanced A* algorithm considering wind, ship factors, and avoiding land
+    shortest_path, cumulative_times, fuel_consumed = astar_path(G, source_node, destination_node, base_speed, start_time, ship_displ, ship_power, ship_load, ship_beam)
 
-# Convert final time to hours and minutes for ETA
-total_hours = int(final_time)
-total_minutes = int((final_time - total_hours) * 60)
+    # Calculate final travel time and ETA
+    final_time = cumulative_times[-1] if cumulative_times else 0  # Final cumulative time in hours
 
-# Calculate the ETA
-eta = start_time + timedelta(hours=total_hours, minutes=total_minutes)
+    # Convert final time to hours and minutes for ETA
+    total_hours = int(final_time)
+    total_minutes = int((final_time - total_hours) * 60)
 
-# Output the total travel time, ETA, and fuel consumption
-print(f"Total travel time according to the algorithm: {total_hours} hours and {total_minutes} minutes")
-print(f"Estimated Time of Arrival (ETA): {eta.strftime('%Y-%m-%d %H:%M:%S')}")
-print(f"Estimated Fuel Consumption: {fuel_consumed:.2f} units")
+    # Calculate the ETA
+    eta = start_time + timedelta(hours=total_hours, minutes=total_minutes)
 
-# Extract path coordinates
-path_coords = [G.nodes[node]['pos'] for node in shortest_path]
+    # Output the total travel time, ETA, and fuel consumption
+    print(f"Total travel time according to the algorithm: {total_hours} hours and {total_minutes} minutes")
+    print(f"Estimated Time of Arrival (ETA): {eta.strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"Estimated Fuel Consumption: {fuel_consumed:.2f} units")
 
-# Apply spline interpolation for path refinement
-if len(path_coords) > 2:
-    x, y = zip(*path_coords)
-    cs = CubicSpline(range(len(x)), np.array([x, y]), axis=1)
-    fine_t = np.linspace(0, len(x)-1, num=len(x)*10)
-    refined_coords = list(zip(cs(fine_t)[0], cs(fine_t)[1]))
-else:
-    refined_coords = path_coords  # No need for refinement if there are too few points
+    # Extract path coordinates
+    path_coords = [G.nodes[node]['pos'] for node in shortest_path]
 
-# Plot the refined route on a Folium map
-map_center = [(start_port[1] + end_port[1]) / 2, (start_port[0] + end_port[0]) / 2]
-m = folium.Map(location=map_center, zoom_start=5)
+    # Apply spline interpolation for path refinement
+    if len(path_coords) > 2:
+        x, y = zip(*path_coords)
+        cs = CubicSpline(range(len(x)), np.array([x, y]), axis=1)
+        fine_t = np.linspace(0, len(x)-1, num=len(x)*10)
+        refined_coords = list(zip(cs(fine_t)[0], cs(fine_t)[1]))
+    else:
+        refined_coords = path_coords  # No need for refinement if there are too few points
 
-# Add the refined path to the map
-folium.PolyLine(locations=[(y, x) for x, y in refined_coords], color='blue', weight=5).add_to(m)
-
-# Save the map as an HTML file
-m.save("kochi_to_maldives_route_with_wind_and_fuel.html")
-print("Route map saved as 'kochi_to_maldives_route_with_wind_and_fuel.html'.")
-m
+    # Plot the refined route on a Folium map
+    map_center = [(start_port[1] + end_port[1]) / 2, (start_port[0] + end_port[0]) / 2]
+    return([refined_coords])

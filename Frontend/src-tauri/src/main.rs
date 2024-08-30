@@ -3,6 +3,8 @@
 use tauri::{Manager, Window, WindowBuilder, WindowUrl};
 use serde::{Deserialize, Serialize};
 use reqwest::blocking::Client;
+use serde_json::to_string;
+use urlencoding::encode;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 struct Ship {
@@ -31,51 +33,55 @@ struct ResponseData {
     fuel: f64,
 }
 
-fn open_new_window(window: Window, resp: ResponseData) {
-    let win = WindowBuilder::new(
+fn open_new_window_with_query_params(window: Window, resp: ResponseData) {
+    // Serialize the response data to JSON and then URL encode it
+    let data_json = to_string(&resp).expect("Failed to serialize data");
+    let encoded_data = urlencoding::encode(&data_json);
+
+    // Create a new window with the serialized data in the query parameters
+    let url = format!("map.html?data={}", encoded_data);
+
+    let new_window = WindowBuilder::new(
         &window.app_handle(),
         "Map-Route",
-        WindowUrl::App("map.html".into())
+        WindowUrl::App(url.into())
     )
     .title("Map")
     .inner_size(400.0, 300.0)
     .build()
     .expect("Failed to open new window");
-
-    win.emit("response", resp).unwrap();
 }
 
 #[tauri::command]
 fn map(window: Window, data: RequestData) -> Result<(), String> {
-    println!("{data:?}");
+    println!("{:?}", data);
 
     let client = Client::new();
 
     println!("Sending request to server...");
 
-    // Send the request synchronously using reqwest blocking client
     let response = match client
         .post("http://127.0.0.1:5000/map")  // Update with your Flask server URL
         .json(&data)
         .send()
     {
         Ok(resp) => {
-            println!("ok");
+            println!("Request successful");
             resp
         },
-        Err(err) => return Err(format!("Failed to parse response: {}", err)),
-        _ => {println!("e");return Err(format!("yuh"))}
+        Err(err) => return Err(format!("Failed to send request: {}", err)),
     };
 
     println!("Request sent, waiting for response...");
-    let s:ResponseData = response.json().unwrap();
-    println!("{s:?}");
-    // let response_data: ResponseData = match response.json() {
-    //     Ok(data) => data,
-    //     Err(err) => return Err(format!("Failed to parse response: {}", err)),
-    // };
 
-    open_new_window(window.clone(), s);
+    let response_data: ResponseData = match response.json() {
+        Ok(data) => data,
+        Err(err) => return Err(format!("Failed to parse response: {}", err)),
+    };
+
+    println!("{:?}", response_data);
+
+    open_new_window_with_query_params(window, response_data);
 
     Ok(())
 }

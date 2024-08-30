@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-
+from src import algorithm
 app = Flask(__name__)
 
 
@@ -8,11 +8,11 @@ def get_user_input():
     user_input = request.json 
     print("Received user input:", user_input) 
 
+    x = algorithm.main()
+
     result = {
     "path": [
-        [12.34, 56.78],
-        [13.34, 57.78],
-        [14.34, 58.78]
+        x
     ],
     "eta": 5.5,
     "km": 120.0,
