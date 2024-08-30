@@ -1,25 +1,32 @@
-import pygrib
+import pickle
+import networkx as nx
 
-# Open the GRIB file
-grib_file = 'ForecastData/tmp/gfs.t12z.pgrb2.0p25.f000'
+# Load the graph from the pickle file
+with open('indian_ocean_graph_with_wind.pickle', 'rb') as f:
+    G = pickle.load(f)
 
+def display_all_wind_data(G, x, y):
+    """
+    Displays all wind data (u and v components) for a given coordinate (x, y)
+    from the NetworkX graph.
+    """
+    node = (x, y)
 
-grbs = pygrib.open(grib_file)
+    if node in G.nodes:
+        wind_data = G.nodes[node].get('wind_data', {})
+        if wind_data:
+            print(f"Wind data for coordinate ({x}, {y}):")
+            for forecast_hour, data in wind_data.items():
+                u_component = data.get('u-component of wind', 'N/A')
+                v_component = data.get('v-component of wind', 'N/A')
+                print(f"Hour {forecast_hour}:")
+                print(f"  U-component of wind: {u_component} m/s")
+                print(f"  V-component of wind: {v_component} m/s")
+        else:
+            print(f"No wind data available for coordinate ({x}, {y}).")
+    else:
+        print(f"Coordinate ({x}, {y}) not found in the graph.")
 
-# Print the contents of the GRIB file
-for grb in grbs:
-    print(f"Parameter Name: {grb.name}")
-    print(f"Short Name: {grb.shortName}")
-    print(f"Type of Level: {grb.typeOfLevel}")
-    print(f"Level: {grb.level}")
-    print(f"Forecast Time: {grb.forecastTime} hours")
-    print(f"Valid Date: {grb.validDate}")
-    print(f"Anal Date: {grb.analDate}")
-    print(f"Units: {grb.units}")
-    print('-' * 50)
-    print(grb.data_values)
-    print('-' * 50)
-
-
-# Close the file
-grbs.close()
+# Example usage:
+x, y = 30, -20  # Example coordinates
+display_all_wind_data(G, x, y)

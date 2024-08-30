@@ -1,0 +1,108 @@
+{
+    "ship_types": [
+        {
+            "category": "Cargo Ships",
+            "types": [
+                "Container Ship",
+                "Bulk Carrier",
+                "Tanker (Oil Tanker, Chemical Tanker, LNG Tanker)",
+                "General Cargo Ship",
+                "Reefer Ship",
+                "Ro-Ro Ship (Roll-on/Roll-off)",
+                "Livestock Carrier",
+                "Heavy Lift Ship",
+                "Multi-purpose Vessel"
+            ]
+        },
+        {
+            "category": "Passenger Ships",
+            "types": [
+                "Cruise Ship",
+                "Ferry",
+                "Yacht",
+                "High-Speed Craft",
+                "Passenger Liner",
+                "Catamaran"
+            ]
+        },
+        {
+            "category": "Fishing Vessels",
+            "types": [
+                "Trawler",
+                "Purse Seiner",
+                "Longliner",
+                "Drifter",
+                "Factory Ship"
+            ]
+        },
+        {
+            "category": "Military Ships",
+            "types": [
+                "Aircraft Carrier",
+                "Destroyer",
+                "Frigate",
+                "Corvette",
+                "Submarine",
+                "Amphibious Assault Ship",
+                "Patrol Boat",
+                "Mine Sweeper",
+                "Cruiser",
+                "Landing Ship",
+                "Supply Ship"
+            ]
+        },
+        {
+            "category": "Specialized Ships",
+            "types": [
+                "Research Vessel",
+                "Icebreaker",
+                "Cable Layer",
+                "Dredger",
+                "Offshore Support Vessel",
+                "Pilot Vessel",
+                "Tugboat",
+                "Fireboat",
+                "Hospital Ship"
+            ]
+        },
+        {
+            "category": "Offshore Vessels",
+            "types": [
+                "Drill Ship",
+                "Floating Production Storage and Offloading (FPSO)",
+                "Offshore Supply Vessel (OSV)",
+                "Anchor Handling Tug Supply Vessel (AHTS)",
+                "Platform Supply Vessel (PSV)",
+                "Subsea Construction Vessel",
+                "Well Intervention Vessel"
+            ]
+        },
+        {
+            "category": "Service Ships",
+            "types": [
+                "Salvage Tug",
+                "Barge",
+                "Floating Crane",
+                "Survey Vessel",
+                "Oil Recovery Ship",
+                "Utility Vessel",
+                "Workboat"
+            ]
+        },
+        {
+            "category": "Recreational Boats",
+            "types": [
+                "Sailing Yacht",
+                "Motor Yacht",
+                "Jet Ski",
+                "Pontoon Boat",
+                "Houseboat",
+                "Dinghy",
+                "Speed Boat",
+                "Fishing Boat",
+                "Canoe",
+                "Kayak"
+            ]
+        }
+    ]
+}

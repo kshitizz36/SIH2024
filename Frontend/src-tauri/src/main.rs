@@ -1,15 +1,88 @@
-// Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
-// Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
+use tauri::{Manager, Window, WindowBuilder, WindowUrl};
+use serde::{Deserialize, Serialize};
+use reqwest::blocking::Client;
+
+#[derive(Serialize, Deserialize, Debug, Clone)]
+struct Ship {
+    shipType: String,
+    Loa: f64,
+    Draft: f64,
+    Displ: f64,
+    Power: f64,
+    Load: f64,
+    Speed: f64,
+    Beam: f64,
+}
+
+#[derive(Serialize, Deserialize, Debug, Clone)]
+struct RequestData {
+    start: (f64, f64),
+    end: (f64, f64),
+    ship: Ship,
+}
+
+#[derive(Serialize, Deserialize, Debug, Clone)]
+struct ResponseData {
+    path: Vec<(f64, f64)>,
+    eta: f64,
+    km: f64,
+    fuel: f64,
+}
+
+fn open_new_window(window: Window, resp: ResponseData) {
+    let win = WindowBuilder::new(
+        &window.app_handle(),
+        "Map-Route",
+        WindowUrl::App("map.html".into())
+    )
+    .title("Map")
+    .inner_size(400.0, 300.0)
+    .build()
+    .expect("Failed to open new window");
+
+    win.emit("response", resp).unwrap();
+}
+
 #[tauri::command]
-fn greet(name: &str) -> String {
-    format!("Hello, {}! You've been greeted from Rust!", name)
+fn map(window: Window, data: RequestData) -> Result<(), String> {
+    println!("{data:?}");
+
+    let client = Client::new();
+
+    println!("Sending request to server...");
+
+    // Send the request synchronously using reqwest blocking client
+    let response = match client
+        .post("http://127.0.0.1:5000/map")  // Update with your Flask server URL
+        .json(&data)
+        .send()
+    {
+        Ok(resp) => {
+            println!("ok");
+            resp
+        },
+        Err(err) => return Err(format!("Failed to parse response: {}", err)),
+        _ => {println!("e");return Err(format!("yuh"))}
+    };
+
+    println!("Request sent, waiting for response...");
+    let s:ResponseData = response.json().unwrap();
+    println!("{s:?}");
+    // let response_data: ResponseData = match response.json() {
+    //     Ok(data) => data,
+    //     Err(err) => return Err(format!("Failed to parse response: {}", err)),
+    // };
+
+    open_new_window(window.clone(), s);
+
+    Ok(())
 }
 
 fn main() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![greet])
+        .invoke_handler(tauri::generate_handler![map])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }

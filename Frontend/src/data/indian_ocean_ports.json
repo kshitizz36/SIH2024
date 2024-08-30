@@ -1,0 +1,2074 @@
+[
+    {
+        "portname": "Sibolga",
+        "country": "Indonesia",
+        "fullname": "Sibolga, Indonesia",
+        "latitude": 1.734969159,
+        "longitude": 98.78171534
+    },
+    {
+        "portname": "Fang-Cheng",
+        "country": "China",
+        "fullname": "Fang-Cheng, China",
+        "latitude": 21.61420534,
+        "longitude": 108.3643393
+    },
+    {
+        "portname": "Stagen",
+        "country": "Indonesia",
+        "fullname": "Stagen, Indonesia",
+        "latitude": -3.279758294,
+        "longitude": 116.1224426
+    },
+    {
+        "portname": "Mina Al Ahmadi",
+        "country": "Kuwait",
+        "fullname": "Mina Al Ahmadi, Kuwait",
+        "latitude": 29.0455478,
+        "longitude": 48.14514574
+    },
+    {
+        "portname": "As Suways",
+        "country": "Egypt",
+        "fullname": "As Suways, Egypt",
+        "latitude": 29.95100833,
+        "longitude": 32.53063921
+    },
+    {
+        "portname": "Tanjung Perak",
+        "country": "Indonesia",
+        "fullname": "Tanjung Perak, Indonesia",
+        "latitude": -7.200873409,
+        "longitude": 112.7216675
+    },
+    {
+        "portname": "Qinzhou",
+        "country": "China",
+        "fullname": "Qinzhou, China",
+        "latitude": 21.67876784,
+        "longitude": 108.6383226
+    },
+    {
+        "portname": "Tanah Merah",
+        "country": "Indonesia",
+        "fullname": "Tanah Merah, Indonesia",
+        "latitude": -1.820176741,
+        "longitude": 116.1567239
+    },
+    {
+        "portname": "Safaga",
+        "country": "Egypt",
+        "fullname": "Safaga, Egypt",
+        "latitude": 26.72555551,
+        "longitude": 33.9422311
+    },
+    {
+        "portname": "Fuzhou",
+        "country": "China",
+        "fullname": "Fuzhou, China",
+        "latitude": 25.77760491,
+        "longitude": 119.4743241
+    },
+    {
+        "portname": "Quanzhou",
+        "country": "China",
+        "fullname": "Quanzhou, China",
+        "latitude": 24.84610329,
+        "longitude": 118.7030793
+    },
+    {
+        "portname": "Tanjung Benete",
+        "country": "Indonesia",
+        "fullname": "Tanjung Benete, Indonesia",
+        "latitude": -8.901785947,
+        "longitude": 116.7448775
+    },
+    {
+        "portname": "Tanjung Geren",
+        "country": "Indonesia",
+        "fullname": "Tanjung Geren, Indonesia",
+        "latitude": -5.963722374,
+        "longitude": 105.9991515
+    },
+    {
+        "portname": "Al Adabiyah",
+        "country": "Egypt",
+        "fullname": "Al Adabiyah, Egypt",
+        "latitude": 29.90416291,
+        "longitude": 32.46211563
+    },
+    {
+        "portname": "Abu Dhabi",
+        "country": "United Arab Emirates",
+        "fullname": "Abu Dhabi, United Arab Emirates",
+        "latitude": 24.61243288,
+        "longitude": 54.563683
+    },
+    {
+        "portname": "Ajman",
+        "country": "United Arab Emirates",
+        "fullname": "Ajman, United Arab Emirates",
+        "latitude": 25.41978684,
+        "longitude": 55.45367849
+    },
+    {
+        "portname": "Al Hamriyah LPG Terminal",
+        "country": "United Arab Emirates",
+        "fullname": "Al Hamriyah LPG Terminal, United Arab Emirates",
+        "latitude": 25.46752849,
+        "longitude": 55.49501172
+    },
+    {
+        "portname": "Sharjah",
+        "country": "United Arab Emirates",
+        "fullname": "Sharjah, United Arab Emirates",
+        "latitude": 25.36312735,
+        "longitude": 55.37623329
+    },
+    {
+        "portname": "Dubai",
+        "country": "United Arab Emirates",
+        "fullname": "Dubai, United Arab Emirates",
+        "latitude": 25.27337362,
+        "longitude": 55.290821
+    },
+    {
+        "portname": "Al Aqabah",
+        "country": "Jordan",
+        "fullname": "Al Aqabah, Jordan",
+        "latitude": 29.45171189,
+        "longitude": 34.95864074
+    },
+    {
+        "portname": "Al Fujayrah",
+        "country": "United Arab Emirates",
+        "fullname": "Al Fujayrah, United Arab Emirates",
+        "latitude": 25.20017278,
+        "longitude": 56.35942059
+    },
+    {
+        "portname": "Shantou",
+        "country": "China",
+        "fullname": "Shantou, China",
+        "latitude": 23.39769643,
+        "longitude": 116.6032633
+    },
+    {
+        "portname": "Jabal Az Zannah-Ruways",
+        "country": "United Arab Emirates",
+        "fullname": "Jabal Az Zannah-Ruways, United Arab Emirates",
+        "latitude": 24.12697586,
+        "longitude": 52.71021364
+    },
+    {
+        "portname": "Khor al Fakkan",
+        "country": "United Arab Emirates",
+        "fullname": "Khor al Fakkan, United Arab Emirates",
+        "latitude": 25.35368858,
+        "longitude": 56.36875484
+    },
+    {
+        "portname": "Shekou (Shenzhen)",
+        "country": "China",
+        "fullname": "Shekou (Shenzhen), China",
+        "latitude": 22.58146762,
+        "longitude": 113.8103377
+    },
+    {
+        "portname": "Jebel Ali",
+        "country": "United Arab Emirates",
+        "fullname": "Jebel Ali, United Arab Emirates",
+        "latitude": 24.99941947,
+        "longitude": 55.07781687
+    },
+    {
+        "portname": "Mina Saqr",
+        "country": "United Arab Emirates",
+        "fullname": "Mina Saqr, United Arab Emirates",
+        "latitude": 25.96728647,
+        "longitude": 56.06305892
+    },
+    {
+        "portname": "Shijing Longxiang",
+        "country": "China",
+        "fullname": "Shijing Longxiang, China",
+        "latitude": 24.6609656,
+        "longitude": 118.4382757
+    },
+    {
+        "portname": "Umm al Qaiwain",
+        "country": "United Arab Emirates",
+        "fullname": "Umm al Qaiwain, United Arab Emirates",
+        "latitude": 25.58810902,
+        "longitude": 55.58024004
+    },
+    {
+        "portname": "Shui Dong",
+        "country": "China",
+        "fullname": "Shui Dong, China",
+        "latitude": 21.47648316,
+        "longitude": 111.0730326
+    },
+    {
+        "portname": "Tanjung Sangata",
+        "country": "Indonesia",
+        "fullname": "Tanjung Sangata, Indonesia",
+        "latitude": 0.534994857,
+        "longitude": 117.6428356
+    },
+    {
+        "portname": "Teluk Bayur",
+        "country": "Indonesia",
+        "fullname": "Teluk Bayur, Indonesia",
+        "latitude": -1.021178175,
+        "longitude": 100.3880034
+    },
+    {
+        "portname": "Guangdong Yangjiang Port",
+        "country": "China",
+        "fullname": "Guangdong Yangjiang Port, China",
+        "latitude": 21.69554902,
+        "longitude": 111.8415794
+    },
+    {
+        "portname": "Xiagong",
+        "country": "China",
+        "fullname": "Xiagong, China",
+        "latitude": 26.56552028,
+        "longitude": 119.7215338
+    },
+    {
+        "portname": "Xiamen",
+        "country": "China",
+        "fullname": "Xiamen, China",
+        "latitude": 24.46593394,
+        "longitude": 118.0205536
+    },
+    {
+        "portname": "Xiuyu",
+        "country": "China",
+        "fullname": "Xiuyu, China",
+        "latitude": 25.16527891,
+        "longitude": 118.9870449
+    },
+    {
+        "portname": "Guangxi Beibu Gulf Port",
+        "country": "China",
+        "fullname": "Guangxi Beibu Gulf Port, China",
+        "latitude": 21.51087873,
+        "longitude": 109.5385338
+    },
+    {
+        "portname": "Yangpu",
+        "country": "China",
+        "fullname": "Yangpu, China",
+        "latitude": 19.7673758,
+        "longitude": 109.1758947
+    },
+    {
+        "portname": "Duba Bulk Plant Tanker Terminal",
+        "country": "Saudi Arabia",
+        "fullname": "Duba Bulk Plant Tanker Terminal, Saudi Arabia",
+        "latitude": 27.32760527,
+        "longitude": 35.73491023
+    },
+    {
+        "portname": "Bunbury",
+        "country": "Australia",
+        "fullname": "Bunbury, Australia",
+        "latitude": -33.32230005,
+        "longitude": 115.6645375
+    },
+    {
+        "portname": "Yantian",
+        "country": "China",
+        "fullname": "Yantian, China",
+        "latitude": 22.58487742,
+        "longitude": 114.2935158
+    },
+    {
+        "portname": "Tuban",
+        "country": "Indonesia",
+        "fullname": "Tuban, Indonesia",
+        "latitude": -6.80448666,
+        "longitude": 111.9012587
+    },
+    {
+        "portname": "Guangzhou",
+        "country": "China",
+        "fullname": "Guangzhou, China",
+        "latitude": 23.02754052,
+        "longitude": 113.4836
+    },
+    {
+        "portname": "Andoany",
+        "country": "Madagascar",
+        "fullname": "Andoany, Madagascar",
+        "latitude": -13.40261812,
+        "longitude": 48.21470202
+    },
+    {
+        "portname": "Zhanjiang",
+        "country": "China",
+        "fullname": "Zhanjiang, China",
+        "latitude": 21.21212795,
+        "longitude": 110.4084103
+    },
+    {
+        "portname": "Jeddah",
+        "country": "Saudi Arabia",
+        "fullname": "Jeddah, Saudi Arabia",
+        "latitude": 21.46079659,
+        "longitude": 39.16640594
+    },
+    {
+        "portname": "Makassar",
+        "country": "Indonesia",
+        "fullname": "Makassar, Indonesia",
+        "latitude": -5.11187581,
+        "longitude": 119.4168045
+    },
+    {
+        "portname": "Haifeng power",
+        "country": "China",
+        "fullname": "Haifeng power, China",
+        "latitude": 22.75341512,
+        "longitude": 115.0438556
+    },
+    {
+        "portname": "Aden",
+        "country": "Yemen",
+        "fullname": "Aden, Yemen",
+        "latitude": 12.78186553,
+        "longitude": 44.95494325
+    },
+    {
+        "portname": "Al-hudaydah",
+        "country": "Yemen",
+        "fullname": "Al-hudaydah, Yemen",
+        "latitude": 14.8331155,
+        "longitude": 42.94343741
+    },
+    {
+        "portname": "Al Mukalla",
+        "country": "Yemen",
+        "fullname": "Al Mukalla, Yemen",
+        "latitude": 14.52061091,
+        "longitude": 49.15123019
+    },
+    {
+        "portname": "Antisranana",
+        "country": "Madagascar",
+        "fullname": "Antisranana, Madagascar",
+        "latitude": -12.26905591,
+        "longitude": 49.28869019
+    },
+    {
+        "portname": "Puerto Princesa",
+        "country": "Philippines",
+        "fullname": "Puerto Princesa, Philippines",
+        "latitude": 9.736639064,
+        "longitude": 118.7327548
+    },
+    {
+        "portname": "Haikou",
+        "country": "China",
+        "fullname": "Haikou, China",
+        "latitude": 20.03232283,
+        "longitude": 110.2808268
+    },
+    {
+        "portname": "Faradofay",
+        "country": "Madagascar",
+        "fullname": "Faradofay, Madagascar",
+        "latitude": -25.06680991,
+        "longitude": 46.96379773
+    },
+    {
+        "portname": "Onslow",
+        "country": "Australia",
+        "fullname": "Onslow, Australia",
+        "latitude": -21.69639497,
+        "longitude": 115.0017981
+    },
+    {
+        "portname": "Majunga",
+        "country": "Madagascar",
+        "fullname": "Majunga, Madagascar",
+        "latitude": -15.72612557,
+        "longitude": 46.31131115
+    },
+    {
+        "portname": "Toamasina",
+        "country": "Madagascar",
+        "fullname": "Toamasina, Madagascar",
+        "latitude": -18.15789697,
+        "longitude": 49.4263411
+    },
+    {
+        "portname": "Toliara",
+        "country": "Madagascar",
+        "fullname": "Toliara, Madagascar",
+        "latitude": -23.37321861,
+        "longitude": 43.66993419
+    },
+    {
+        "portname": "Point Murat",
+        "country": "Australia",
+        "fullname": "Point Murat, Australia",
+        "latitude": -21.95777415,
+        "longitude": 114.1385188
+    },
+    {
+        "portname": "Bangkok",
+        "country": "Thailand",
+        "fullname": "Bangkok, Thailand",
+        "latitude": 13.68350932,
+        "longitude": 100.5725844
+    },
+    {
+        "portname": "Map Ta Phut",
+        "country": "Thailand",
+        "fullname": "Map Ta Phut, Thailand",
+        "latitude": 12.68571375,
+        "longitude": 101.1421513
+    },
+    {
+        "portname": "Phuket",
+        "country": "Thailand",
+        "fullname": "Phuket, Thailand",
+        "latitude": 7.823681372,
+        "longitude": 98.40475093
+    },
+    {
+        "portname": "Ampenan",
+        "country": "Indonesia",
+        "fullname": "Ampenan, Indonesia",
+        "latitude": -8.664698797,
+        "longitude": 116.0732049
+    },
+    {
+        "portname": "Balikpapan",
+        "country": "Indonesia",
+        "fullname": "Balikpapan, Indonesia",
+        "latitude": -1.202534486,
+        "longitude": 116.79598
+    },
+    {
+        "portname": "Banjarmasin",
+        "country": "Indonesia",
+        "fullname": "Banjarmasin, Indonesia",
+        "latitude": -3.288021408,
+        "longitude": 114.562927
+    },
+    {
+        "portname": "Banten",
+        "country": "Indonesia",
+        "fullname": "Banten, Indonesia",
+        "latitude": -6.016931808,
+        "longitude": 105.9675676
+    },
+    {
+        "portname": "El Sokhna",
+        "country": "Egypt",
+        "fullname": "El Sokhna, Egypt",
+        "latitude": 29.64742882,
+        "longitude": 32.35392159
+    },
+    {
+        "portname": "Tanjung Sekong",
+        "country": "Indonesia",
+        "fullname": "Tanjung Sekong, Indonesia",
+        "latitude": -5.905540925,
+        "longitude": 106.0153659
+    },
+    {
+        "portname": "Jubail",
+        "country": "Saudi Arabia",
+        "fullname": "Jubail, Saudi Arabia",
+        "latitude": 27.05573014,
+        "longitude": 49.6603903
+    },
+    {
+        "portname": "Albany",
+        "country": "Australia",
+        "fullname": "Albany, Australia",
+        "latitude": -35.03402477,
+        "longitude": 117.8971538
+    },
+    {
+        "portname": "Tanjung Redeb",
+        "country": "Indonesia",
+        "fullname": "Tanjung Redeb, Indonesia",
+        "latitude": 2.165959622,
+        "longitude": 117.5010746
+    },
+    {
+        "portname": "Dammam",
+        "country": "Saudi Arabia",
+        "fullname": "Dammam, Saudi Arabia",
+        "latitude": 26.47626701,
+        "longitude": 50.19439715
+    },
+    {
+        "portname": "Tanjunguban",
+        "country": "Indonesia",
+        "fullname": "Tanjunguban, Indonesia",
+        "latitude": 1.055761709,
+        "longitude": 104.2025609
+    },
+    {
+        "portname": "Duba",
+        "country": "Saudi Arabia",
+        "fullname": "Duba, Saudi Arabia",
+        "latitude": 27.55991231,
+        "longitude": 35.5465967
+    },
+    {
+        "portname": "Port Hedland",
+        "country": "Australia",
+        "fullname": "Port Hedland, Australia",
+        "latitude": -20.33066003,
+        "longitude": 118.5643416
+    },
+    {
+        "portname": "Huizhou",
+        "country": "China",
+        "fullname": "Huizhou, China",
+        "latitude": 22.73482063,
+        "longitude": 114.5982287
+    },
+    {
+        "portname": "Rayong",
+        "country": "Thailand",
+        "fullname": "Rayong, Thailand",
+        "latitude": 12.65890283,
+        "longitude": 101.3121055
+    },
+    {
+        "portname": "Laem Chabang",
+        "country": "Thailand",
+        "fullname": "Laem Chabang, Thailand",
+        "latitude": 13.0887337,
+        "longitude": 100.8999916
+    },
+    {
+        "portname": "Belawan",
+        "country": "Indonesia",
+        "fullname": "Belawan, Indonesia",
+        "latitude": 3.78854271,
+        "longitude": 98.70736598
+    },
+    {
+        "portname": "Benoa",
+        "country": "Indonesia",
+        "fullname": "Benoa, Indonesia",
+        "latitude": -8.631208267,
+        "longitude": 115.3534602
+    },
+    {
+        "portname": "Blanglancang",
+        "country": "Indonesia",
+        "fullname": "Blanglancang, Indonesia",
+        "latitude": 5.230939806,
+        "longitude": 97.06571881
+    },
+    {
+        "portname": "Songkhla",
+        "country": "Thailand",
+        "fullname": "Songkhla, Thailand",
+        "latitude": 7.228638224,
+        "longitude": 100.5712733
+    },
+    {
+        "portname": "Bontang LNG Terminal",
+        "country": "Indonesia",
+        "fullname": "Bontang LNG Terminal, Indonesia",
+        "latitude": 0.096886557,
+        "longitude": 117.4925674
+    },
+    {
+        "portname": "Cilacap",
+        "country": "Indonesia",
+        "fullname": "Cilacap, Indonesia",
+        "latitude": -7.710107441,
+        "longitude": 109.0388343
+    },
+    {
+        "portname": "Cirebon",
+        "country": "Indonesia",
+        "fullname": "Cirebon, Indonesia",
+        "latitude": -6.73590951,
+        "longitude": 108.5915104
+    },
+    {
+        "portname": "Donggala",
+        "country": "Indonesia",
+        "fullname": "Donggala, Indonesia",
+        "latitude": -0.745020664,
+        "longitude": 119.8288951
+    },
+    {
+        "portname": "Dumai",
+        "country": "Indonesia",
+        "fullname": "Dumai, Indonesia",
+        "latitude": 1.717388504,
+        "longitude": 101.4188235
+    },
+    {
+        "portname": "Thathong",
+        "country": "Thailand",
+        "fullname": "Thathong, Thailand",
+        "latitude": 9.17586433,
+        "longitude": 99.36651889
+    },
+    {
+        "portname": "Gresik",
+        "country": "Indonesia",
+        "fullname": "Gresik, Indonesia",
+        "latitude": -7.140468238,
+        "longitude": 112.644235
+    },
+    {
+        "portname": "Tanjung Priok",
+        "country": "Indonesia",
+        "fullname": "Tanjung Priok, Indonesia",
+        "latitude": -6.100544627,
+        "longitude": 106.9054876
+    },
+    {
+        "portname": "Kota Baru",
+        "country": "Indonesia",
+        "fullname": "Kota Baru, Indonesia",
+        "latitude": -3.245141628,
+        "longitude": 116.2294128
+    },
+    {
+        "portname": "Lafarge",
+        "country": "Indonesia",
+        "fullname": "Lafarge, Indonesia",
+        "latitude": 5.452012951,
+        "longitude": 95.24432071
+    },
+    {
+        "portname": "Lingkas",
+        "country": "Indonesia",
+        "fullname": "Lingkas, Indonesia",
+        "latitude": 3.286518484,
+        "longitude": 117.5934411
+    },
+    {
+        "portname": "Merak Mas Terminal",
+        "country": "Indonesia",
+        "fullname": "Merak Mas Terminal, Indonesia",
+        "latitude": -5.93656194,
+        "longitude": 106.0960201
+    },
+    {
+        "portname": "PLTU Semen Tonasa",
+        "country": "Indonesia",
+        "fullname": "PLTU Semen Tonasa, Indonesia",
+        "latitude": -4.815964628,
+        "longitude": 119.5000805
+    },
+    {
+        "portname": "Palembang",
+        "country": "Indonesia",
+        "fullname": "Palembang, Indonesia",
+        "latitude": -2.986159534,
+        "longitude": 104.8251794
+    },
+    {
+        "portname": "Panjang",
+        "country": "Indonesia",
+        "fullname": "Panjang, Indonesia",
+        "latitude": -5.493013574,
+        "longitude": 105.3301717
+    },
+    {
+        "portname": "Parepare",
+        "country": "Indonesia",
+        "fullname": "Parepare, Indonesia",
+        "latitude": -4.002997065,
+        "longitude": 119.6260057
+    },
+    {
+        "portname": "Pelabuhan Tanjung Wangi",
+        "country": "Indonesia",
+        "fullname": "Pelabuhan Tanjung Wangi, Indonesia",
+        "latitude": -8.141007884,
+        "longitude": 114.3975522
+    },
+    {
+        "portname": "PelabuhanRatuCoalPowerPlant",
+        "country": "Indonesia",
+        "fullname": "PelabuhanRatuCoalPowerPlant, Indonesia",
+        "latitude": -6.953376613,
+        "longitude": 106.2464415
+    },
+    {
+        "portname": "Pontianak",
+        "country": "Indonesia",
+        "fullname": "Pontianak, Indonesia",
+        "latitude": 0.006325197,
+        "longitude": 109.294324
+    },
+    {
+        "portname": "Probolinggo",
+        "country": "Indonesia",
+        "fullname": "Probolinggo, Indonesia",
+        "latitude": -7.71711305,
+        "longitude": 113.4157124
+    },
+    {
+        "portname": "Pulau Baai",
+        "country": "Indonesia",
+        "fullname": "Pulau Baai, Indonesia",
+        "latitude": -3.912624289,
+        "longitude": 102.2899162
+    },
+    {
+        "portname": "Samarinda",
+        "country": "Indonesia",
+        "fullname": "Samarinda, Indonesia",
+        "latitude": -0.551281498,
+        "longitude": 117.1922256
+    },
+    {
+        "portname": "Sampit",
+        "country": "Indonesia",
+        "fullname": "Sampit, Indonesia",
+        "latitude": -2.50712718,
+        "longitude": 112.9748253
+    },
+    {
+        "portname": "Sekupang",
+        "country": "Indonesia",
+        "fullname": "Sekupang, Indonesia",
+        "latitude": 1.130810535,
+        "longitude": 103.9555474
+    },
+    {
+        "portname": "Semarang",
+        "country": "Indonesia",
+        "fullname": "Semarang, Indonesia",
+        "latitude": -6.949628052,
+        "longitude": 110.4241286
+    },
+    {
+        "portname": "Basuo",
+        "country": "China",
+        "fullname": "Basuo, China",
+        "latitude": 19.07869612,
+        "longitude": 108.6293529
+    },
+    {
+        "portname": "Uleelheue",
+        "country": "Indonesia",
+        "fullname": "Uleelheue, Indonesia",
+        "latitude": 5.59637662,
+        "longitude": 95.52598222
+    },
+    {
+        "portname": "Beihai",
+        "country": "China",
+        "fullname": "Beihai, China",
+        "latitude": 21.47255148,
+        "longitude": 109.0671522
+    },
+    {
+        "portname": "Dampier",
+        "country": "Australia",
+        "fullname": "Dampier, Australia",
+        "latitude": -20.6266866,
+        "longitude": 116.7424761
+    },
+    {
+        "portname": "Shoaiba",
+        "country": "Saudi Arabia",
+        "fullname": "Shoaiba, Saudi Arabia",
+        "latitude": 20.65258296,
+        "longitude": 39.54249452
+    },
+    {
+        "portname": "Juaymah",
+        "country": "Saudi Arabia",
+        "fullname": "Juaymah, Saudi Arabia",
+        "latitude": 26.80319051,
+        "longitude": 49.97698013
+    },
+    {
+        "portname": "King Fahd Port",
+        "country": "Saudi Arabia",
+        "fullname": "King Fahd Port, Saudi Arabia",
+        "latitude": 23.95087468,
+        "longitude": 38.27170365
+    },
+    {
+        "portname": "Rabigh",
+        "country": "Saudi Arabia",
+        "fullname": "Rabigh, Saudi Arabia",
+        "latitude": 22.63873353,
+        "longitude": 39.05376029
+    },
+    {
+        "portname": "Bandar-E Pars Terminal",
+        "country": "Iran",
+        "fullname": "Bandar-E Pars Terminal, Iran",
+        "latitude": 27.56361956,
+        "longitude": 52.51242998
+    },
+    {
+        "portname": "Fremantle",
+        "country": "Australia",
+        "fullname": "Fremantle, Australia",
+        "latitude": -32.15203252,
+        "longitude": 115.7705242
+    },
+    {
+        "portname": "Ras Al Mishab",
+        "country": "Saudi Arabia",
+        "fullname": "Ras Al Mishab, Saudi Arabia",
+        "latitude": 27.88827937,
+        "longitude": 48.81709477
+    },
+    {
+        "portname": "Chaozhou",
+        "country": "China",
+        "fullname": "Chaozhou, China",
+        "latitude": 23.56807273,
+        "longitude": 117.1093332
+    },
+    {
+        "portname": "Bandar Shahid Rajaee",
+        "country": "Iran",
+        "fullname": "Bandar Shahid Rajaee, Iran",
+        "latitude": 27.13960482,
+        "longitude": 56.06282679
+    },
+    {
+        "portname": "Ras Al-Khair",
+        "country": "Saudi Arabia",
+        "fullname": "Ras Al-Khair, Saudi Arabia",
+        "latitude": 27.54005494,
+        "longitude": 49.18719288
+    },
+    {
+        "portname": "Chiwan",
+        "country": "China",
+        "fullname": "Chiwan, China",
+        "latitude": 19.96273734,
+        "longitude": 110.0339897
+    },
+    {
+        "portname": "Geraldton",
+        "country": "Australia",
+        "fullname": "Geraldton, Australia",
+        "latitude": -28.77609449,
+        "longitude": 114.5941933
+    },
+    {
+        "portname": "Ras Tanura",
+        "country": "Saudi Arabia",
+        "fullname": "Ras Tanura, Saudi Arabia",
+        "latitude": 26.67168923,
+        "longitude": 50.12291543
+    },
+    {
+        "portname": "Bandar Abbas",
+        "country": "Iran",
+        "fullname": "Bandar Abbas, Iran",
+        "latitude": 27.14750008,
+        "longitude": 56.20294512
+    },
+    {
+        "portname": "Yanbu",
+        "country": "Saudi Arabia",
+        "fullname": "Yanbu, Saudi Arabia",
+        "latitude": 24.07715154,
+        "longitude": 38.07030618
+    },
+    {
+        "portname": "Shuwaikh",
+        "country": "Kuwait",
+        "fullname": "Shuwaikh, Kuwait",
+        "latitude": 29.35210588,
+        "longitude": 47.92389677
+    },
+    {
+        "portname": "Bushehr",
+        "country": "Iran",
+        "fullname": "Bushehr, Iran",
+        "latitude": 28.99153747,
+        "longitude": 50.83467263
+    },
+    {
+        "portname": "Gorgon LNG",
+        "country": "Australia",
+        "fullname": "Gorgon LNG, Australia",
+        "latitude": -20.79232174,
+        "longitude": 115.4597616
+    },
+    {
+        "portname": "Chabahar",
+        "country": "Iran",
+        "fullname": "Chabahar, Iran",
+        "latitude": 25.2960398,
+        "longitude": 60.61107983
+    },
+    {
+        "portname": "Port Walcott",
+        "country": "Australia",
+        "fullname": "Port Walcott, Australia",
+        "latitude": -20.60828612,
+        "longitude": 117.1656515
+    },
+    {
+        "portname": "Dung Quat",
+        "country": "Vietnam",
+        "fullname": "Dung Quat, Vietnam",
+        "latitude": 15.40466501,
+        "longitude": 108.8018653
+    },
+    {
+        "portname": "Da Nang",
+        "country": "Vietnam",
+        "fullname": "Da Nang, Vietnam",
+        "latitude": 16.11513801,
+        "longitude": 108.2296467
+    },
+    {
+        "portname": "Hai Phong",
+        "country": "Vietnam",
+        "fullname": "Hai Phong, Vietnam",
+        "latitude": 20.84406939,
+        "longitude": 106.7474848
+    },
+    {
+        "portname": "Hon Gai",
+        "country": "Vietnam",
+        "fullname": "Hon Gai, Vietnam",
+        "latitude": 20.99454236,
+        "longitude": 107.0548395
+    },
+    {
+        "portname": "Nghe Tinh",
+        "country": "Vietnam",
+        "fullname": "Nghe Tinh, Vietnam",
+        "latitude": 19.21524656,
+        "longitude": 105.762275
+    },
+    {
+        "portname": "Cai Mep",
+        "country": "Vietnam",
+        "fullname": "Cai Mep, Vietnam",
+        "latitude": 10.57169836,
+        "longitude": 107.02606
+    },
+    {
+        "portname": "Port of Can Tho",
+        "country": "Vietnam",
+        "fullname": "Port of Can Tho, Vietnam",
+        "latitude": 10.11224068,
+        "longitude": 105.7023004
+    },
+    {
+        "portname": "Quy Nhon",
+        "country": "Vietnam",
+        "fullname": "Quy Nhon, Vietnam",
+        "latitude": 13.7761055,
+        "longitude": 109.2444482
+    },
+    {
+        "portname": "Saigon",
+        "country": "Vietnam",
+        "fullname": "Saigon, Vietnam",
+        "latitude": 10.73624058,
+        "longitude": 106.766152
+    },
+    {
+        "portname": "Vung Tau",
+        "country": "Vietnam",
+        "fullname": "Vung Tau, Vietnam",
+        "latitude": 10.39088089,
+        "longitude": 107.0917354
+    },
+    {
+        "portname": "Durban",
+        "country": "South Africa",
+        "fullname": "Durban, South Africa",
+        "latitude": -29.88212961,
+        "longitude": 31.02302243
+    },
+    {
+        "portname": "East London",
+        "country": "South Africa",
+        "fullname": "East London, South Africa",
+        "latitude": -33.02810636,
+        "longitude": 27.90088104
+    },
+    {
+        "portname": "Port Elizabeth",
+        "country": "South Africa",
+        "fullname": "Port Elizabeth, South Africa",
+        "latitude": -33.90336755,
+        "longitude": 25.62262529
+    },
+    {
+        "portname": "Richards Bay",
+        "country": "South Africa",
+        "fullname": "Richards Bay, South Africa",
+        "latitude": -28.79239882,
+        "longitude": 32.03937272
+    },
+    {
+        "portname": "Chittagong",
+        "country": "Bangladesh",
+        "fullname": "Chittagong, Bangladesh",
+        "latitude": 22.2812458,
+        "longitude": 91.81385427
+    },
+    {
+        "portname": "Dhaka",
+        "country": "Bangladesh",
+        "fullname": "Dhaka, Bangladesh",
+        "latitude": 23.6624176,
+        "longitude": 90.44870639
+    },
+    {
+        "portname": "Mongla",
+        "country": "Bangladesh",
+        "fullname": "Mongla, Bangladesh",
+        "latitude": 22.50341944,
+        "longitude": 89.58968406
+    },
+    {
+        "portname": "Payra",
+        "country": "Bangladesh",
+        "fullname": "Payra, Bangladesh",
+        "latitude": 21.99789333,
+        "longitude": 90.30570117
+    },
+    {
+        "portname": "Gwadar",
+        "country": "Pakistan",
+        "fullname": "Gwadar, Pakistan",
+        "latitude": 25.10895254,
+        "longitude": 62.33856519
+    },
+    {
+        "portname": "Karachi",
+        "country": "Pakistan",
+        "fullname": "Karachi, Pakistan",
+        "latitude": 24.82327471,
+        "longitude": 66.98321718
+    },
+    {
+        "portname": "Muhammad Bin Qasim",
+        "country": "Pakistan",
+        "fullname": "Muhammad Bin Qasim, Pakistan",
+        "latitude": 24.80838458,
+        "longitude": 67.32181857
+    },
+    {
+        "portname": "Hong Kong",
+        "country": "Hong Kong SAR",
+        "fullname": "Hong Kong, Hong Kong SAR",
+        "latitude": 22.33510926,
+        "longitude": 114.0966519
+    },
+    {
+        "portname": "Sihanoukville",
+        "country": "Cambodia",
+        "fullname": "Sihanoukville, Cambodia",
+        "latitude": 10.67900004,
+        "longitude": 103.5274566
+    },
+    {
+        "portname": "Sitrah",
+        "country": "Bahrain",
+        "fullname": "Sitrah, Bahrain",
+        "latitude": 26.18935646,
+        "longitude": 50.66794163
+    },
+    {
+        "portname": "Colombo",
+        "country": "Sri Lanka",
+        "fullname": "Colombo, Sri Lanka",
+        "latitude": 6.949982173,
+        "longitude": 79.8397869
+    },
+    {
+        "portname": "Lamu",
+        "country": "Kenya",
+        "fullname": "Lamu, Kenya",
+        "latitude": -2.196462578,
+        "longitude": 40.91448117
+    },
+    {
+        "portname": "Hambantota",
+        "country": "Sri Lanka",
+        "fullname": "Hambantota, Sri Lanka",
+        "latitude": 6.128669137,
+        "longitude": 81.09465896
+    },
+    {
+        "portname": "Mombasa",
+        "country": "Kenya",
+        "fullname": "Mombasa, Kenya",
+        "latitude": -4.048091983,
+        "longitude": 39.6344671
+    },
+    {
+        "portname": "Trincomalee",
+        "country": "Sri Lanka",
+        "fullname": "Trincomalee, Sri Lanka",
+        "latitude": 8.562149056,
+        "longitude": 81.1988085
+    },
+    {
+        "portname": "Beira",
+        "country": "Mozambique",
+        "fullname": "Beira, Mozambique",
+        "latitude": -19.8110704,
+        "longitude": 34.83983895
+    },
+    {
+        "portname": "Maputo",
+        "country": "Mozambique",
+        "fullname": "Maputo, Mozambique",
+        "latitude": -25.95563087,
+        "longitude": 32.52103798
+    },
+    {
+        "portname": "Lumut",
+        "country": "Brunei Darussalam",
+        "fullname": "Lumut, Brunei Darussalam",
+        "latitude": 4.672209645,
+        "longitude": 114.4727127
+    },
+    {
+        "portname": "Nacala",
+        "country": "Mozambique",
+        "fullname": "Nacala, Mozambique",
+        "latitude": -14.53535059,
+        "longitude": 40.65118404
+    },
+    {
+        "portname": "Muara Harbor",
+        "country": "Brunei Darussalam",
+        "fullname": "Muara Harbor, Brunei Darussalam",
+        "latitude": 5.011106351,
+        "longitude": 115.0902845
+    },
+    {
+        "portname": "Pemba",
+        "country": "Mozambique",
+        "fullname": "Pemba, Mozambique",
+        "latitude": -12.96679021,
+        "longitude": 40.48677495
+    },
+    {
+        "portname": "Berbera",
+        "country": "Somalia",
+        "fullname": "Berbera, Somalia",
+        "latitude": 10.4329427,
+        "longitude": 44.9969791
+    },
+    {
+        "portname": "Calcutta",
+        "country": "India",
+        "fullname": "Calcutta, India",
+        "latitude": 22.53574401,
+        "longitude": 88.29958111
+    },
+    {
+        "portname": "Chennai (Madras)",
+        "country": "India",
+        "fullname": "Chennai (Madras), India",
+        "latitude": 13.10046724,
+        "longitude": 80.29425074
+    },
+    {
+        "portname": "Dahej",
+        "country": "India",
+        "fullname": "Dahej, India",
+        "latitude": 21.70299817,
+        "longitude": 72.57511466
+    },
+    {
+        "portname": "Dhamra Port",
+        "country": "India",
+        "fullname": "Dhamra Port, India",
+        "latitude": 20.82773698,
+        "longitude": 86.9595015
+    },
+    {
+        "portname": "Haldia",
+        "country": "India",
+        "fullname": "Haldia, India",
+        "latitude": 22.0577906,
+        "longitude": 88.10419444
+    },
+    {
+        "portname": "Jaigad Port",
+        "country": "India",
+        "fullname": "Jaigad Port, India",
+        "latitude": 17.29523509,
+        "longitude": 73.21867272
+    },
+    {
+        "portname": "Kakinada",
+        "country": "India",
+        "fullname": "Kakinada, India",
+        "latitude": 16.98707395,
+        "longitude": 82.27189263
+    },
+    {
+        "portname": "Kamarajar Port",
+        "country": "India",
+        "fullname": "Kamarajar Port, India",
+        "latitude": 13.27933099,
+        "longitude": 80.33854581
+    },
+    {
+        "portname": "Deendayal (Kandla)",
+        "country": "India",
+        "fullname": "Deendayal (Kandla), India",
+        "latitude": 23.0091192,
+        "longitude": 70.21565487
+    },
+    {
+        "portname": "Karaikal",
+        "country": "India",
+        "fullname": "Karaikal, India",
+        "latitude": 10.84053369,
+        "longitude": 79.84255847
+    },
+    {
+        "portname": "Cochin (Kochi)",
+        "country": "India",
+        "fullname": "Cochin (Kochi), India",
+        "latitude": 9.969351911,
+        "longitude": 76.25922208
+    },
+    {
+        "portname": "Krishnapatnam Port",
+        "country": "India",
+        "fullname": "Krishnapatnam Port, India",
+        "latitude": 14.26065023,
+        "longitude": 80.11792197
+    },
+    {
+        "portname": "Magdalla",
+        "country": "India",
+        "fullname": "Magdalla, India",
+        "latitude": 21.13429214,
+        "longitude": 72.67743533
+    },
+    {
+        "portname": "Mormugao",
+        "country": "India",
+        "fullname": "Mormugao, India",
+        "latitude": 15.40731887,
+        "longitude": 73.80153102
+    },
+    {
+        "portname": "Mumbai-Jawaharlal Nehru (Nhava Sheva)",
+        "country": "India",
+        "fullname": "Mumbai-Jawaharlal Nehru (Nhava Sheva), India",
+        "latitude": 18.91732276,
+        "longitude": 72.93965039
+    },
+    {
+        "portname": "Mundra",
+        "country": "India",
+        "fullname": "Mundra, India",
+        "latitude": 22.76296998,
+        "longitude": 69.6220188
+    },
+    {
+        "portname": "Navlakhi",
+        "country": "India",
+        "fullname": "Navlakhi, India",
+        "latitude": 22.95724298,
+        "longitude": 70.45245138
+    },
+    {
+        "portname": "New Mangalore",
+        "country": "India",
+        "fullname": "New Mangalore, India",
+        "latitude": 12.93776393,
+        "longitude": 74.81887955
+    },
+    {
+        "portname": "Paradip",
+        "country": "India",
+        "fullname": "Paradip, India",
+        "latitude": 20.28045307,
+        "longitude": 86.64892168
+    },
+    {
+        "portname": "Pipavav",
+        "country": "India",
+        "fullname": "Pipavav, India",
+        "latitude": 20.90789389,
+        "longitude": 71.46568355
+    },
+    {
+        "portname": "Sikka",
+        "country": "India",
+        "fullname": "Sikka, India",
+        "latitude": 22.36483725,
+        "longitude": 69.80786454
+    },
+    {
+        "portname": "V. O. Chidambaranar (Tuticorin)",
+        "country": "India",
+        "fullname": "V. O. Chidambaranar (Tuticorin), India",
+        "latitude": 8.765928225,
+        "longitude": 78.18889725
+    },
+    {
+        "portname": "Visakhapatnam",
+        "country": "India",
+        "fullname": "Visakhapatnam, India",
+        "latitude": 17.65545047,
+        "longitude": 83.23140922
+    },
+    {
+        "portname": "Port of Sohar",
+        "country": "Oman",
+        "fullname": "Port of Sohar, Oman",
+        "latitude": 24.51168743,
+        "longitude": 56.6127179
+    },
+    {
+        "portname": "Qalhat LNG Terminal",
+        "country": "Oman",
+        "fullname": "Qalhat LNG Terminal, Oman",
+        "latitude": 22.65195684,
+        "longitude": 59.41585249
+    },
+    {
+        "portname": "Massawa",
+        "country": "Eritrea",
+        "fullname": "Massawa, Eritrea",
+        "latitude": 15.59947972,
+        "longitude": 39.46163976
+    },
+    {
+        "portname": "Moroni",
+        "country": "Comoros",
+        "fullname": "Moroni, Comoros",
+        "latitude": -11.70541816,
+        "longitude": 43.2469507
+    },
+    {
+        "portname": "Moutsamoudu",
+        "country": "Comoros",
+        "fullname": "Moutsamoudu, Comoros",
+        "latitude": -12.16776101,
+        "longitude": 44.39240197
+    },
+    {
+        "portname": "Port Est",
+        "country": "R\u00e9union",
+        "fullname": "Port Est, R\u00e9union",
+        "latitude": -20.93088407,
+        "longitude": 55.30742425
+    },
+    {
+        "portname": "Kyaukpyu",
+        "country": "Myanmar",
+        "fullname": "Kyaukpyu, Myanmar",
+        "latitude": 19.36256828,
+        "longitude": 93.68246844
+    },
+    {
+        "portname": "Yangon",
+        "country": "Myanmar",
+        "fullname": "Yangon, Myanmar",
+        "latitude": 16.71604961,
+        "longitude": 96.21277607
+    },
+    {
+        "portname": "Port Louis",
+        "country": "Mauritius",
+        "fullname": "Port Louis, Mauritius",
+        "latitude": -20.14941789,
+        "longitude": 57.49585987
+    },
+    {
+        "portname": "Port Sudan",
+        "country": "Sudan",
+        "fullname": "Port Sudan, Sudan",
+        "latitude": 19.603933,
+        "longitude": 37.23334445
+    },
+    {
+        "portname": "Suakin",
+        "country": "Sudan",
+        "fullname": "Suakin, Sudan",
+        "latitude": 19.1159604,
+        "longitude": 37.34948178
+    },
+    {
+        "portname": "Ras Laffan",
+        "country": "Qatar",
+        "fullname": "Ras Laffan, Qatar",
+        "latitude": 25.90850676,
+        "longitude": 51.59049926
+    },
+    {
+        "portname": "Al Ruwais",
+        "country": "Qatar",
+        "fullname": "Al Ruwais, Qatar",
+        "latitude": 26.14559103,
+        "longitude": 51.20530511
+    },
+    {
+        "portname": "Doha-Umm Said",
+        "country": "Qatar",
+        "fullname": "Doha-Umm Said, Qatar",
+        "latitude": 24.96358831,
+        "longitude": 51.56713164
+    },
+    {
+        "portname": "Serangoon Harbor",
+        "country": "Singapore",
+        "fullname": "Serangoon Harbor, Singapore",
+        "latitude": 1.358261773,
+        "longitude": 104.0345309
+    },
+    {
+        "portname": "Singapore",
+        "country": "Singapore",
+        "fullname": "Singapore, Singapore",
+        "latitude": 1.271989257,
+        "longitude": 103.7074816
+    },
+    {
+        "portname": "Victoria",
+        "country": "Seychelles",
+        "fullname": "Victoria, Seychelles",
+        "latitude": -4.622741734,
+        "longitude": 55.46227513
+    },
+    {
+        "portname": "Bosaso",
+        "country": "Somalia",
+        "fullname": "Bosaso, Somalia",
+        "latitude": 11.2906123,
+        "longitude": 49.18112783
+    },
+    {
+        "portname": "Mogadishu",
+        "country": "Somalia",
+        "fullname": "Mogadishu, Somalia",
+        "latitude": 2.024425203,
+        "longitude": 45.33463075
+    },
+    {
+        "portname": "Bintulu Port",
+        "country": "Malaysia",
+        "fullname": "Bintulu Port, Malaysia",
+        "latitude": 3.271023549,
+        "longitude": 113.077426
+    },
+    {
+        "portname": "Johor",
+        "country": "Malaysia",
+        "fullname": "Johor, Malaysia",
+        "latitude": 1.457450535,
+        "longitude": 103.9199042
+    },
+    {
+        "portname": "Kemaman Harbor",
+        "country": "Malaysia",
+        "fullname": "Kemaman Harbor, Malaysia",
+        "latitude": 4.257503129,
+        "longitude": 103.4591111
+    },
+    {
+        "portname": "Kirteh Oil Terminal",
+        "country": "Malaysia",
+        "fullname": "Kirteh Oil Terminal, Malaysia",
+        "latitude": 4.574618296,
+        "longitude": 103.452834
+    },
+    {
+        "portname": "Kota Kinabalu",
+        "country": "Malaysia",
+        "fullname": "Kota Kinabalu, Malaysia",
+        "latitude": 5.994756636,
+        "longitude": 116.081712
+    },
+    {
+        "portname": "Kuantan New Port",
+        "country": "Malaysia",
+        "fullname": "Kuantan New Port, Malaysia",
+        "latitude": 3.981726241,
+        "longitude": 103.3931808
+    },
+    {
+        "portname": "Kuching",
+        "country": "Malaysia",
+        "fullname": "Kuching, Malaysia",
+        "latitude": 1.566258403,
+        "longitude": 110.4216778
+    },
+    {
+        "portname": "Lahad Datu",
+        "country": "Malaysia",
+        "fullname": "Lahad Datu, Malaysia",
+        "latitude": 5.021070498,
+        "longitude": 118.3600911
+    },
+    {
+        "portname": "Lumut",
+        "country": "Malaysia",
+        "fullname": "Lumut, Malaysia",
+        "latitude": 4.227365727,
+        "longitude": 100.6433762
+    },
+    {
+        "portname": "Pelabuhan Sansakan",
+        "country": "Malaysia",
+        "fullname": "Pelabuhan Sansakan, Malaysia",
+        "latitude": 5.805288589,
+        "longitude": 118.0602551
+    },
+    {
+        "portname": "Pelabuhan Sungai Udang",
+        "country": "Malaysia",
+        "fullname": "Pelabuhan Sungai Udang, Malaysia",
+        "latitude": 2.263627014,
+        "longitude": 102.1357975
+    },
+    {
+        "portname": "Port Dickson",
+        "country": "Malaysia",
+        "fullname": "Port Dickson, Malaysia",
+        "latitude": 2.549916819,
+        "longitude": 101.7895789
+    },
+    {
+        "portname": "Port Klang",
+        "country": "Malaysia",
+        "fullname": "Port Klang, Malaysia",
+        "latitude": 2.972594826,
+        "longitude": 101.3403063
+    },
+    {
+        "portname": "Penang",
+        "country": "Malaysia",
+        "fullname": "Penang, Malaysia",
+        "latitude": 5.379749741,
+        "longitude": 100.3899815
+    },
+    {
+        "portname": "Port of Sabah",
+        "country": "Malaysia",
+        "fullname": "Port of Sabah, Malaysia",
+        "latitude": 6.074811315,
+        "longitude": 116.1258948
+    },
+    {
+        "portname": "Tanjung Pelepas",
+        "country": "Malaysia",
+        "fullname": "Tanjung Pelepas, Malaysia",
+        "latitude": 1.349982803,
+        "longitude": 103.5464032
+    },
+    {
+        "portname": "Tg Mani",
+        "country": "Malaysia",
+        "fullname": "Tg Mani, Malaysia",
+        "latitude": 2.150721317,
+        "longitude": 111.3371532
+    },
+    {
+        "portname": "Victoria",
+        "country": "Malaysia",
+        "fullname": "Victoria, Malaysia",
+        "latitude": 5.25942875,
+        "longitude": 115.2377077
+    },
+    {
+        "portname": "Dar Es Salaam",
+        "country": "Tanzania",
+        "fullname": "Dar Es Salaam, Tanzania",
+        "latitude": -6.843548595,
+        "longitude": 39.29619624
+    },
+    {
+        "portname": "Zanzibar",
+        "country": "Tanzania",
+        "fullname": "Zanzibar, Tanzania",
+        "latitude": -6.156445914,
+        "longitude": 39.19253473
+    },
+    {
+        "portname": "Macau",
+        "country": "Macao SAR",
+        "fullname": "Macau, Macao SAR",
+        "latitude": 22.15538395,
+        "longitude": 113.5578462
+    },
+    {
+        "portname": "Male",
+        "country": "Maldives",
+        "fullname": "Male, Maldives",
+        "latitude": 4.188648639,
+        "longitude": 73.49198324
+    },
+    {
+        "portname": "Djibouti",
+        "country": "Djibouti",
+        "fullname": "Djibouti, Djibouti",
+        "latitude": 11.59746443,
+        "longitude": 43.10371866
+    },
+    {
+        "portname": "Port Sultan Qaboos",
+        "country": "Oman",
+        "fullname": "Port Sultan Qaboos, Oman",
+        "latitude": 23.62884171,
+        "longitude": 58.56595296
+    },
+    {
+        "portname": "Salalah",
+        "country": "Oman",
+        "fullname": "Salalah, Oman",
+        "latitude": 16.94229498,
+        "longitude": 54.0083198
+    },
+    {
+        "portname": "Duqm",
+        "country": "Oman",
+        "fullname": "Duqm, Oman",
+        "latitude": 19.67066724,
+        "longitude": 57.71736119
+    },
+    {
+        "portname": "Port de Longoni",
+        "country": "Mayotte",
+        "fullname": "Port de Longoni, Mayotte",
+        "latitude": -12.72484002,
+        "longitude": 45.16784536
+    },
+    {
+        "portname": "Khalifa Bin Salman",
+        "country": "Bahrain",
+        "fullname": "Khalifa Bin Salman, Bahrain",
+        "latitude": 26.2546428806082,
+        "longitude": 50.6789666064565
+    },
+    {
+        "portname": "Eilat",
+        "country": "Israel",
+        "fullname": "Eilat, Israel",
+        "latitude": 29.5318039070984,
+        "longitude": 34.9422234742842
+    },
+    {
+        "portname": "Dongguan",
+        "country": "China",
+        "fullname": "Dongguan, China",
+        "latitude": 22.8895469826739,
+        "longitude": 113.584833339607
+    },
+    {
+        "portname": "Khalifa Port",
+        "country": "United Arab Emirates",
+        "fullname": "Khalifa Port, United Arab Emirates",
+        "latitude": 24.8063011338021,
+        "longitude": 54.6931452546069
+    },
+    {
+        "portname": "Hamad Port",
+        "country": "Qatar",
+        "fullname": "Hamad Port, Qatar",
+        "latitude": 25.0199084210527,
+        "longitude": 51.6189139089543
+    },
+    {
+        "portname": "Mawan",
+        "country": "China",
+        "fullname": "Mawan, China",
+        "latitude": 22.4789636055732,
+        "longitude": 113.873818471647
+    },
+    {
+        "portname": "Dachan Bay",
+        "country": "China",
+        "fullname": "Dachan Bay, China",
+        "latitude": 22.546940821745,
+        "longitude": 113.85636713537
+    },
+    {
+        "portname": "Qianhai Bay",
+        "country": "China",
+        "fullname": "Qianhai Bay, China",
+        "latitude": 22.5172621132649,
+        "longitude": 113.871572497511
+    },
+    {
+        "portname": "King Abdullah Port",
+        "country": "Saudi Arabia",
+        "fullname": "King Abdullah Port, Saudi Arabia",
+        "latitude": 22.5180255857748,
+        "longitude": 39.0951887006265
+    },
+    {
+        "portname": "Siam Seaport",
+        "country": "Thailand",
+        "fullname": "Siam Seaport, Thailand",
+        "latitude": 13.1198552915062,
+        "longitude": 100.889379400773
+    },
+    {
+        "portname": "Kattupalli",
+        "country": "India",
+        "fullname": "Kattupalli, India",
+        "latitude": 13.3028360623488,
+        "longitude": 80.3478454189246
+    },
+    {
+        "portname": "Hazira",
+        "country": "India",
+        "fullname": "Hazira, India",
+        "latitude": 21.0867418434348,
+        "longitude": 72.646256828019
+    },
+    {
+        "portname": "Chu Lai",
+        "country": "Vietnam",
+        "fullname": "Chu Lai, Vietnam",
+        "latitude": 15.4738614798003,
+        "longitude": 108.639054619355
+    },
+    {
+        "portname": "Cam Pha",
+        "country": "Vietnam",
+        "fullname": "Cam Pha, Vietnam",
+        "latitude": 21.0502255319232,
+        "longitude": 107.371424851142
+    },
+    {
+        "portname": "Mina Salman",
+        "country": "Bahrain",
+        "fullname": "Mina Salman, Bahrain",
+        "latitude": 26.1915358163903,
+        "longitude": 50.6100103379679
+    },
+    {
+        "portname": "Ngqura",
+        "country": "South Africa",
+        "fullname": "Ngqura, South Africa",
+        "latitude": -33.8069513827286,
+        "longitude": 25.6944148119478
+    },
+    {
+        "portname": "Shuaiba",
+        "country": "Kuwait",
+        "fullname": "Shuaiba, Kuwait",
+        "latitude": 29.0394783129701,
+        "longitude": 48.1670519806477
+    },
+    {
+        "portname": "Kismayo",
+        "country": "Somalia",
+        "fullname": "Kismayo, Somalia",
+        "latitude": -0.373401277064594,
+        "longitude": 42.54931257818
+    },
+    {
+        "portname": "Jazan",
+        "country": "Saudi Arabia",
+        "fullname": "Jazan, Saudi Arabia",
+        "latitude": 16.8797436617626,
+        "longitude": 42.5430314066133
+    },
+    {
+        "portname": "Cat Lai (Saigon New Port)",
+        "country": "Vietnam",
+        "fullname": "Cat Lai (Saigon New Port), Vietnam",
+        "latitude": 10.7683557993276,
+        "longitude": 106.802314203887
+    },
+    {
+        "portname": "Tanga",
+        "country": "Tanzania",
+        "fullname": "Tanga, Tanzania",
+        "latitude": -5.0560326269058,
+        "longitude": 39.1171123545215
+    },
+    {
+        "portname": "Ras Al Khafji",
+        "country": "Saudi Arabia",
+        "fullname": "Ras Al Khafji, Saudi Arabia",
+        "latitude": 28.4147323996188,
+        "longitude": 48.5244701173789
+    },
+    {
+        "portname": "Mossel Bay",
+        "country": "South Africa",
+        "fullname": "Mossel Bay, South Africa",
+        "latitude": -34.1781985568769,
+        "longitude": 22.1465413863415
+    },
+    {
+        "portname": "Zirku Island",
+        "country": "United Arab Emirates",
+        "fullname": "Zirku Island, United Arab Emirates",
+        "latitude": 24.8851758085943,
+        "longitude": 53.0746754938844
+    },
+    {
+        "portname": "Zhuhai",
+        "country": "China",
+        "fullname": "Zhuhai, China",
+        "latitude": 21.9493590971629,
+        "longitude": 113.200731191862
+    },
+    {
+        "portname": "Gulei",
+        "country": "China",
+        "fullname": "Gulei, China",
+        "latitude": 23.7909562617756,
+        "longitude": 117.600010342984
+    },
+    {
+        "portname": "Guangao",
+        "country": "China",
+        "fullname": "Guangao, China",
+        "latitude": 23.2306071713215,
+        "longitude": 116.762324970768
+    },
+    {
+        "portname": "Ras Gharib",
+        "country": "Egypt",
+        "fullname": "Ras Gharib, Egypt",
+        "latitude": 28.3445642535532,
+        "longitude": 33.1097191315154
+    },
+    {
+        "portname": "Zeit Bay",
+        "country": "Egypt",
+        "fullname": "Zeit Bay, Egypt",
+        "latitude": 27.8161621640394,
+        "longitude": 33.5801485093014
+    },
+    {
+        "portname": "Ras Shukheir",
+        "country": "Egypt",
+        "fullname": "Ras Shukheir, Egypt",
+        "latitude": 28.1285102857574,
+        "longitude": 33.2826172757473
+    },
+    {
+        "portname": "Vizhinjam",
+        "country": "India",
+        "fullname": "Vizhinjam, India",
+        "latitude": 8.36856104748015,
+        "longitude": 76.993736641428
+    },
+    {
+        "portname": "Karwar",
+        "country": "India",
+        "fullname": "Karwar, India",
+        "latitude": 14.7698923706459,
+        "longitude": 74.1341444434512
+    },
+    {
+        "portname": "Port Blair",
+        "country": "India",
+        "fullname": "Port Blair, India",
+        "latitude": 11.676789659007,
+        "longitude": 92.7224725576251
+    },
+    {
+        "portname": "Kharg Island",
+        "country": "Iran",
+        "fullname": "Kharg Island, Iran",
+        "latitude": 29.2430727915583,
+        "longitude": 50.335074434646
+    },
+    {
+        "portname": "Lavan",
+        "country": "Iran",
+        "fullname": "Lavan, Iran",
+        "latitude": 26.7905436961137,
+        "longitude": 53.3501575546447
+    },
+    {
+        "portname": "Salif",
+        "country": "Yemen",
+        "fullname": "Salif, Yemen",
+        "latitude": 15.3169166182557,
+        "longitude": 42.6736742475775
+    },
+    {
+        "portname": "Shuqaiq",
+        "country": "Saudi Arabia",
+        "fullname": "Shuqaiq, Saudi Arabia",
+        "latitude": 17.6283957836864,
+        "longitude": 42.0779551591398
+    },
+    {
+        "portname": "Galle",
+        "country": "Sri Lanka",
+        "fullname": "Galle, Sri Lanka",
+        "latitude": 6.0316176410085,
+        "longitude": 80.2267827964668
+    },
+    {
+        "portname": "Bashayer",
+        "country": "Sudan",
+        "fullname": "Bashayer, Sudan",
+        "latitude": 19.3907845405067,
+        "longitude": 37.3178703686159
+    },
+    {
+        "portname": "Mtwara",
+        "country": "Tanzania",
+        "fullname": "Mtwara, Tanzania",
+        "latitude": -10.2608605099218,
+        "longitude": 40.2042547130292
+    },
+    {
+        "portname": "Jebel Dhanna",
+        "country": "United Arab Emirates",
+        "fullname": "Jebel Dhanna, United Arab Emirates",
+        "latitude": 24.174505328853,
+        "longitude": 52.5910418293556
+    },
+    {
+        "portname": "Das Island",
+        "country": "United Arab Emirates",
+        "fullname": "Das Island, United Arab Emirates",
+        "latitude": 25.1459398379326,
+        "longitude": 52.8754554358407
+    },
+    {
+        "portname": "Van Phong",
+        "country": "Vietnam",
+        "fullname": "Van Phong, Vietnam",
+        "latitude": 12.5040628840733,
+        "longitude": 109.283625429454
+    },
+    {
+        "portname": "Ash Shihr",
+        "country": "Yemen",
+        "fullname": "Ash Shihr, Yemen",
+        "latitude": 14.6944993583033,
+        "longitude": 49.5436480987972
+    },
+    {
+        "portname": "Rudum Terminal",
+        "country": "Yemen",
+        "fullname": "Rudum Terminal, Yemen",
+        "latitude": 13.9931436850754,
+        "longitude": 47.914459003825
+    },
+    {
+        "portname": "Ras Isa Terminal",
+        "country": "Yemen",
+        "fullname": "Ras Isa Terminal, Yemen",
+        "latitude": 15.2506749411968,
+        "longitude": 42.6176409513343
+    },
+    {
+        "portname": "Mokha",
+        "country": "Yemen",
+        "fullname": "Mokha, Yemen",
+        "latitude": 13.2999773445722,
+        "longitude": 43.2338128020907
+    },
+    {
+        "portname": "Pengerang",
+        "country": "Malaysia",
+        "fullname": "Pengerang, Malaysia",
+        "latitude": 1.3409833539977,
+        "longitude": 104.161861035667
+    },
+    {
+        "portname": "Kimanis",
+        "country": "Malaysia",
+        "fullname": "Kimanis, Malaysia",
+        "latitude": 5.69823512877678,
+        "longitude": 115.810788401596
+    },
+    {
+        "portname": "Kunak",
+        "country": "Malaysia",
+        "fullname": "Kunak, Malaysia",
+        "latitude": 4.69406464844105,
+        "longitude": 118.256394118897
+    },
+    {
+        "portname": "Tawau",
+        "country": "Malaysia",
+        "fullname": "Tawau, Malaysia",
+        "latitude": 4.25500727463273,
+        "longitude": 117.870156155841
+    },
+    {
+        "portname": "Karimun",
+        "country": "Indonesia",
+        "fullname": "Karimun, Indonesia",
+        "latitude": 1.06318536647826,
+        "longitude": 103.317664793112
+    },
+    {
+        "portname": "Muntok",
+        "country": "Indonesia",
+        "fullname": "Muntok, Indonesia",
+        "latitude": -2.07402944030294,
+        "longitude": 105.170642224652
+    },
+    {
+        "portname": "Sungai Pakning",
+        "country": "Indonesia",
+        "fullname": "Sungai Pakning, Indonesia",
+        "latitude": 1.34826369615872,
+        "longitude": 102.157879941684
+    },
+    {
+        "portname": "Padang",
+        "country": "Indonesia",
+        "fullname": "Padang, Indonesia",
+        "latitude": -8.51191030976715,
+        "longitude": 115.513227073498
+    },
+    {
+        "portname": "Sabang",
+        "country": "Indonesia",
+        "fullname": "Sabang, Indonesia",
+        "latitude": 5.88491841895616,
+        "longitude": 95.3208123004595
+    },
+    {
+        "portname": "Pulau Sambu",
+        "country": "Indonesia",
+        "fullname": "Pulau Sambu, Indonesia",
+        "latitude": 1.16080828783621,
+        "longitude": 103.899648281736
+    },
+    {
+        "portname": "Kuala Tanjung",
+        "country": "Indonesia",
+        "fullname": "Kuala Tanjung, Indonesia",
+        "latitude": 3.37206298625255,
+        "longitude": 99.4558614311782
+    },
+    {
+        "portname": "Kijing",
+        "country": "Indonesia",
+        "fullname": "Kijing, Indonesia",
+        "latitude": 0.513514898115065,
+        "longitude": 108.915660358245
+    }
+]
