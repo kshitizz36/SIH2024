@@ -31,9 +31,7 @@ json_input = '''
 # Parse JSON input
 input_data = json.loads(json_input)
 
-# Extract start and end coordinates
-start_port = tuple(input_data['start'][::-1])  # Reverse order to (longitude, latitude)
-end_port = tuple(input_data['end'][::-1])  # Reverse order to (longitude, latitude)
+  # Reverse order to (longitude, latitude)
 
 # Extract ship information
 ship_speed = input_data['ship']['Speed']  # Base speed from the ship data
@@ -232,8 +230,10 @@ def find_nearest_node(G, coord):
     return closest_node
 
 
-def main():
-
+def main(start,end):
+# Extract start and end coordinates
+    start_port = tuple(start[::-1])  # Reverse order to (longitude, latitude)
+    end_port = tuple(end[::-1])
     # Use start and end coordinates from JSON input
     source_node = find_nearest_node(G, start_port)
     destination_node = find_nearest_node(G, end_port)

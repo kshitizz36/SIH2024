@@ -8,7 +8,7 @@ def get_user_input():
     user_input = request.json 
     print("Received user input:", user_input) 
 
-    x = algorithm.main()
+    x = algorithm.main(user_input['start'],user_input['end'])
 
     
     result = {
