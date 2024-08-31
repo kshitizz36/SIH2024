@@ -8,16 +8,24 @@ import shipTypesData from './data/ship_data.json'
 
 function App() {
 
-  const [Start, setStart] = useState();
-  const [End, setEnd] = useState();
+  const [Start, setStart] = useState([0.34534534,2.34534534534]);
+  const [End, setEnd] = useState([2.879438579,0.8927498273]);
   const [Shipdata, setShipdata] = useState({})
 
-  const putstart = (e) => { setStart(e.target.value) };
+  const putstart = (e) => {
+    const selectedCoords = e.target.value.split(',').map(Number);
+    setStart(selectedCoords);
+  };
 
+  const putend = (e) => {
+    const selectedCoords = e.target.value.split(',').map(Number);
+    setEnd(selectedCoords);
+  };
   const sendRust = () => {
+    console.log(Start,End)
     const data = {
-      "start": [12.34, 56.78],
-      "end": [98.76, 54.32],
+      "start": Start,
+      "end": End,
       "ship": {
         "shipType": "Cargo",
         "Loa": 2414.0,
@@ -42,20 +50,20 @@ function App() {
     <>
       <div className="bg-[#e6e6e6] w-full h-screen">
         <img src={logo} />
-        <div className="flex bg-yellow-200 items-center content-center p-25 mt-20">
-          <div className="bg-red-500 w-1/3 h-1/2 mx-5 flex flex-col">
+        <div className="flex items-center content-center p-25 mt-20">
+          <div className="w-1/3 h-1/2 mx-5 flex flex-col">
 
             <>
-              <label className='mb-[10px] block text-base font-medium text-dark dark:text-white'>
+              <label className='mb-[10px] block text-base font-medium text-dark dark:text-black'>
                 Default Select
               </label>
               <div className='relative z-20'>
-                <select onChange={putstart} className='relative z-20 w-full appearance-none rounded-lg border border-stroke dark:border-dark-3 bg-transparent py-[10px] px-5 text-dark-6 outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-gray-2'>
+                <select onChange={putstart} className=''>
 
                   {ports.map(
                     (fullname, latitude, longitude) => {
                       return (
-                        <option value={(latitude, longitude)} className='dark:bg-dark-2'>{fullname['fullname']}</option>
+                        <option value={[fullname['latitude'],fullname['longitude']]} className='dark:bg-dark-2'>{fullname['fullname']}</option>
                       )
                     }
                   )}
@@ -64,16 +72,16 @@ function App() {
               </div>
             </>
             <>
-              <label className='mb-[10px] block text-base font-medium text-dark dark:text-white'>
+              <label className='mb-[10px] block text-base font-medium text-dark dark:text-black'>
                 Default Select
               </label>
               <div className='relative z-20'>
-                <select onChange={putstart} className='relative z-20 w-full appearance-none rounded-lg border border-stroke dark:border-dark-3 bg-transparent py-[10px] px-5 text-dark-6 outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-gray-2'>
+                <select onChange={putend} className=''>
 
                   {ports.map(
                     (fullname, latitude, longitude) => {
                       return (
-                        <option value={(latitude, longitude)} className='dark:bg-dark-2'>{fullname['fullname']}</option>
+                        <option value={[fullname['latitude'],fullname['longitude']]} className='dark:bg-dark-2'>{fullname['fullname']}</option>
                       )
                     }
                   )}
@@ -83,14 +91,14 @@ function App() {
             </>
           </div>
           <div className="w-0.5 h-60 m-30 bg-[#797979]" />
-          <div className="bg-indigo-500 w-1/3 mx-5">
+          <div className="w-1/3 mx-5">
             <div className="">
               <>
-                <label className='mb-[10px] block text-base font-medium text-dark dark:text-white'>
+                <label className='mb-[10px] block text-base font-medium text-dark dark:text-black'>
                   Ship Type
                 </label>
                 <div className='relative z-20'>
-                  <select className='relative z-20 w-full appearance-none rounded-lg border border-stroke dark:border-dark-3 bg-transparent py-[10px] px-5 text-dark-6 outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-gray-2'>
+                  <select className=''>
                     {shipTypesData.ship_types.map((category, index) => (
                       <optgroup key={index} label={category.category}>
                         {category.types.map((type, typeIndex) => (
@@ -105,80 +113,80 @@ function App() {
                 </div>
               </>
               <>
-                <label className='mb-[10px] block text-base font-medium text-dark dark:text-white'>
+                <label className='mb-[10px] block text-base font-medium text-dark dark:text-black'>
                   Length Overall (LOA)
                 </label>
                 <input
                   type='text'
                   placeholder='Default Input'
-                  className='w-full bg-transparent rounded-md border border-stroke dark:border-dark-3 py-[10px] px-5 text-dark-6 outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-gray-2 disabled:border-gray-2'
+                  className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 '
                 />
               </>
               <>
-                <label className='mb-[10px] block text-base font-medium text-dark dark:text-white'>
+                <label className='mb-[10px] block text-base font-medium text-dark dark:text-black'>
                   Beam
                 </label>
                 <input
                   type='text'
                   placeholder='Default Input'
-                  className='w-full bg-transparent rounded-md border border-stroke dark:border-dark-3 py-[10px] px-5 text-dark-6 outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-gray-2 disabled:border-gray-2'
+                  className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 '
                 />
               </>
               <>
-                <label className='mb-[10px] block text-base font-medium text-dark dark:text-white'>
+                <label className='mb-[10px] block text-base font-medium text-dark dark:text-black'>
                   Draft
                 </label>
                 <input
                   type='text'
                   placeholder='Default Input'
-                  className='w-full bg-transparent rounded-md border border-stroke dark:border-dark-3 py-[10px] px-5 text-dark-6 outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-gray-2 disabled:border-gray-2'
+                  className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 '
                 />
               </>
               <>
-                <label className='mb-[10px] block text-base font-medium text-dark dark:text-white'>
+                <label className='mb-[10px] block text-base font-medium text-dark dark:text-black'>
                   Displacement
                 </label>
                 <input
                   type='text'
                   placeholder='Default Input'
-                  className='w-full bg-transparent rounded-md border border-stroke dark:border-dark-3 py-[10px] px-5 text-dark-6 outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-gray-2 disabled:border-gray-2'
+                  className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 '
                 />
               </>
               <>
-                <label className='mb-[10px] block text-base font-medium text-dark dark:text-white'>
+                <label className='mb-[10px] block text-base font-medium text-dark dark:text-black'>
                   Power
                 </label>
                 <input
                   type='text'
                   placeholder='Default Input'
-                  className='w-full bg-transparent rounded-md border border-stroke dark:border-dark-3 py-[10px] px-5 text-dark-6 outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-gray-2 disabled:border-gray-2'
+                  className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 '
                 />
               </>
               <>
-                <label className='mb-[10px] block text-base font-medium text-dark dark:text-white'>
+                <label className='mb-[10px] block text-base font-medium text-dark dark:text-black'>
                   Cargo Load
                 </label>
                 <input
                   type='text'
                   placeholder='Default Input'
-                  className='w-full bg-transparent rounded-md border border-stroke dark:border-dark-3 py-[10px] px-5 text-dark-6 outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-gray-2 disabled:border-gray-2'
+                  className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 '
                 />
               </>
               <>
-                <label className='mb-[10px] block text-base font-medium text-dark dark:text-white'>
+                <label className='mb-[10px] block text-base font-medium text-dark dark:text-black'>
                   Service Speed
                 </label>
                 <input
                   type='text'
                   placeholder='Default Input'
-                  className='w-full bg-transparent rounded-md border border-stroke dark:border-dark-3 py-[10px] px-5 text-dark-6 outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-gray-2 disabled:border-gray-2'
+                  className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 '
                 />
               </>
 
             </div>
           </div>
         </div>
-        <button onClick={() => { sendRust() }}>btn</button>
+        <button className="m-32 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-10 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" onClick={() => { sendRust() }}>Get Route</button>
       </div>
     </>
   );

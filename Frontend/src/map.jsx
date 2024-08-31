@@ -1,38 +1,45 @@
 import { useState, useEffect } from "react";
-import { listen } from "@tauri-apps/api/event";
 import "./App.css";
 import "leaflet/dist/leaflet.css";
-import { MapContainer, TileLayer, Polyline, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Polyline } from "react-leaflet";
 
 function Map() {
   const [data, setData] = useState(null);
-  const [recvDat,setRecvDat] = useState(false);
+
+  // Function to get query parameters from the URL
   function getQueryParams() {
     return new URLSearchParams(window.location.search);
   }
+
+  // Function to parse the data from the query parameters
   function parseDataFromQuery() {
     const params = getQueryParams();
     const encodedData = params.get("data");
+
     if (encodedData) {
-      return JSON.parse(decodeURIComponent(encodedData));
+      try {
+        return JSON.parse(decodeURIComponent(encodedData));
+      } catch (error) {
+        console.error("Failed to parse data:", error);
+        return null;
+      }
     }
     return null;
   }
+
+  // useEffect to run when the component mounts
   useEffect(() => {
-    const data = parseDataFromQuery();
-    setData(data);
+    const parsedData = parseDataFromQuery();
+    if (parsedData) {
+      setData(parsedData);
+    }
   }, []);
 
-  console.log(data)
-
-
-  // Convert the path data into an array of LatLng tuples
-  const route = recvDat ? data.path.map(([lat, lon]) => [lat, lon]) : [];
-
+  // Convert the path data into an array of LatLng tuples for Leaflet
+  const route = data && data.path ? data.path.map(([lat, lon]) => [lat, lon]) : [];
 
   return (
     <div className="w-30 h-dvj">
-
       <MapContainer center={[20.593, 78.962]} zoom={5} scrollWheelZoom={true}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -41,15 +48,6 @@ function Map() {
 
         {/* Draw the route on the map using Polyline */}
         {route.length > 0 && <Polyline positions={route} color="blue" />}
-
-        {/* Optionally, add markers for each point in the route */}
-        {route.map((position, idx) => (
-          <Marker key={idx} position={position}>
-            <Popup>
-              Point {idx + 1}: [{position[0]}, {position[1]}]
-            </Popup>
-          </Marker>
-        ))}
       </MapContainer>
     </div>
   );

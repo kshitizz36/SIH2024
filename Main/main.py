@@ -10,10 +10,9 @@ def get_user_input():
 
     x = algorithm.main()
 
+    
     result = {
-    "path": [
-        x
-    ],
+    "path": x,
     "eta": 5.5,
     "km": 120.0,
     "fuel": 30.0
