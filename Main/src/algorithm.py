@@ -272,7 +272,7 @@ def main(start,end):
     # Plot the refined route on a Folium map
     map_center = [(start_port[1] + end_port[1]) / 2, (start_port[0] + end_port[0]) / 2]
     m = folium.Map(location=map_center, zoom_start=5)
-
+    x = str(eta.strftime('%Y-%m-%d %H:%M:%S'))
     # Add the refined path to the map
     d = [(y, x) for x, y in refined_coords]
-    return [d,[total_hours,total_minutes,str(eta.strftime('%Y-%m-%d %H:%M:%S'))],fuel_consumed,total_distance,map_center]
+    return [d,final_time,total_distance,fuel_consumed,map_center]

@@ -72,9 +72,9 @@ fn map(window: Window, data: RequestData) -> Result<(), String> {
         Err(err) => return Err(format!("Failed to send request: {}", err)),
     };
 
-    println!("Request sent, waiting for response...");
-//     let response_text = response.text().expect("Failed to read response text");
-// println!("Raw response: {}", response_text);
+    // println!("Request sent, waiting for response...");
+    // let response_text = response.text().expect("Failed to read response text");
+    // println!("Raw response: {response_text:?}");
 
     // let sx:ResponseData = response.json().expect("??????//");
 
