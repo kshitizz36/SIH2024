@@ -20,7 +20,7 @@ function Map() {
       try {
         return JSON.parse(decodeURIComponent(encodedData));
       } catch (error) {
-        console.error("Failed to parsawaaaaaaae data:", error);
+        console.error("Failed to parse data:", error);
         return null;
       }
     }
@@ -40,37 +40,39 @@ function Map() {
   console.log(data);
 
   return (
-    <div className="w-30 h-dvj">
-      <MapContainer center={[20.593, 78.962]} zoom={5} scrollWheelZoom={true}>
-
+    <div className="relative w-full h-screen">
+      {/* MapContainer with z-index adjusted */}
+      <MapContainer
+        center={[20.593, 78.962]}
+        zoom={5}
+        scrollWheelZoom={true}
+        className="absolute top-0 left-0 w-full h-full z-0"
+      >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
         {/* Draw the route on the map using Polyline */}
-        {route.length > 0 && <>
-        <Polyline positions={route} color="blue" />
-        <Marker position={route[0]}>
-                <Popup>Starting point</Popup>
-              </Marker>
-              <Marker position={route[route.length - 1]}>
-                <Popup>Destination point</Popup>
-              </Marker>
-        </>}
-        {/* {
-          route ? (
-            <>
-              <Marker position={route[0]}>
-                <Popup>Starting point</Popup>
-              </Marker>
-              <Marker position={route[route.length - 1]}>
-                <Popup>Destination point</Popup>
-              </Marker>
-            </>
-          ) : null
-        } */}
+        {route.length > 0 && (
+          <>
+            <Polyline positions={route} color="blue" />
+            <Marker position={route[0]}>
+              <Popup>Starting point</Popup>
+            </Marker>
+            <Marker position={route[route.length - 1]}>
+              <Popup>Destination point</Popup>
+            </Marker>
+          </>
+        )}
       </MapContainer>
+
+      {/* Fixed, rounded box in the bottom left corner with z-index to be on top */}
+      <div className="fixed bottom-5 left-5 p-3 bg-white bg-opacity-80 rounded-lg shadow-lg z-50">
+        <p className="text-sm font-medium">ETA : {Math.floor(data['eta'])} Hrs.</p>
+        {/* <p className="text-sm font-medium">Estimated Fuel Usage : {data['fuel']}</p> */}
+        <p className="text-sm font-medium">Distance : {Math.floor(data['km'])} KMs</p>
+      </div>
     </div>
   );
 }
