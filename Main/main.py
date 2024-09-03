@@ -19,8 +19,6 @@ def get_user_input():
     }
 
 
-    print(result)
-
     return jsonify(result), 200
 
 if __name__ == '__main__':

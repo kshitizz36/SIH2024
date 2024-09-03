@@ -55,7 +55,7 @@ function App() {
 
             <>
               <label className='mb-[10px] block text-base font-medium text-dark dark:text-black'>
-                Default Select
+                Starting Port
               </label>
               <div className='relative z-20'>
                 <select onChange={putstart} className=''>
@@ -73,7 +73,7 @@ function App() {
             </>
             <>
               <label className='mb-[10px] block text-base font-medium text-dark dark:text-black'>
-                Default Select
+                Destination Port
               </label>
               <div className='relative z-20'>
                 <select onChange={putend} className=''>

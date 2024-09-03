@@ -67,12 +67,12 @@ function Map() {
         )}
       </MapContainer>
 
-      {/* Fixed, rounded box in the bottom left corner with z-index to be on top */}
+      {route.length > 0 && (
       <div className="fixed bottom-5 left-5 p-3 bg-white bg-opacity-80 rounded-lg shadow-lg z-50">
         <p className="text-sm font-medium">ETA : {Math.floor(data['eta'])} Hrs.</p>
         {/* <p className="text-sm font-medium">Estimated Fuel Usage : {data['fuel']}</p> */}
         <p className="text-sm font-medium">Distance : {Math.floor(data['km'])} KMs</p>
-      </div>
+      </div>)}
     </div>
   );
 }
