@@ -73,13 +73,19 @@ fn map(window: Window, data: RequestData) -> Result<(), String> {
     };
 
     println!("Request sent, waiting for response...");
+//     let response_text = response.text().expect("Failed to read response text");
+// println!("Raw response: {}", response_text);
+
+    // let sx:ResponseData = response.json().expect("??????//");
+
+    // println!("{sx:?}");
 
     let response_data: ResponseData = match response.json() {
         Ok(data) => data,
-        Err(err) => return Err(format!("Failed to parse response: {}", err)),
+        Err(err) => return Err(format!("Failed to parse responseaaaa: {}", err)),
     };
 
-    println!("{:?}", response_data);
+    
 
     open_new_window_with_query_params(window, response_data);
 

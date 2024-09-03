@@ -275,4 +275,4 @@ def main(start,end):
 
     # Add the refined path to the map
     d = [(y, x) for x, y in refined_coords]
-    return d
+    return [d,[total_hours,total_minutes,str(eta.strftime('%Y-%m-%d %H:%M:%S'))],fuel_consumed,total_distance,map_center]

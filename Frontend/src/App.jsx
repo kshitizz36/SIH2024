@@ -40,7 +40,7 @@ function App() {
     try{
       invoke('map',{data})
     }catch(e){
-      console.log(e)
+      console.log(e+'adawdwad')
     }
     
   }

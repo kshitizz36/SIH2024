@@ -20,7 +20,7 @@ function Map() {
       try {
         return JSON.parse(decodeURIComponent(encodedData));
       } catch (error) {
-        console.error("Failed to parse data:", error);
+        console.error("Failed to parsawaaaaaaae data:", error);
         return null;
       }
     }
@@ -37,7 +37,7 @@ function Map() {
 
   // Convert the path data into an array of LatLng tuples for Leaflet
   const route = data && data.path ? data.path.map(([lat, lon]) => [lat, lon]) : [];
-  console.log(route);
+  console.log(data);
 
   return (
     <div className="w-30 h-dvj">

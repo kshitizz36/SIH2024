@@ -12,12 +12,12 @@ def get_user_input():
 
     
     result = {
-    "path": x,
-    "eta": 5.5,
-    "km": 120.0,
-    "fuel": 30.0
-}
-
+    "path": x[0],
+    "eta": x[1][2],
+    "km": x[3],
+    "fuel": x[-3],
+    }
+    print('sendin')
 
     return jsonify(result), 200
 

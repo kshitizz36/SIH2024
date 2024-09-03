@@ -3,13 +3,13 @@ import concurrent.futures
 
 # Base URL components
 base_url = "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl"
-dir_param = "%2Fgfs.20240825%2F12%2Fatmos"
-file_prefix = "gfs.t12z.pgrb2.0p25."
+dir_param = "%2Fgfs.20240902%2F18%2Fatmos"
+file_prefix = "gfs.t18z.pgrb2.0p25.anl"
 
 # Variables and levels
-var_UGRD = "on"
-var_VGRD = "on"
-lev_10_m_above_ground = "on"
+var_VFLX = "on"
+var_VIS = "on"
+lev_surface = "on"
 
 # Subregion coordinates
 toplat = "31.1859"
@@ -21,18 +21,19 @@ bottomlat = "-60.0"
 def download_file(hour):
     hour_str = f"f{hour:03d}"
 
-    # Construct the full URL
+    # Construct the full URL with new variables and levels
     full_url = (
-        f"{base_url}?dir={dir_param}&file={file_prefix}{hour_str}&"
-        f"var_UGRD={var_UGRD}&var_VGRD={var_VGRD}&lev_10_m_above_ground={lev_10_m_above_ground}&"
+        f"{base_url}?dir={dir_param}&file={file_prefix}&"
+        f"var_VFLX={var_VFLX}&var_VIS={var_VIS}&lev_surface={lev_surface}&"
         f"toplat={toplat}&leftlon={leftlon}&rightlon={rightlon}&bottomlat={bottomlat}"
     )
 
     # Send the GET request to download the file
     try:
         response = requests.get(full_url)
-    except:
-        print('retrying for ',full_url)
+    except Exception as e:
+        print(f"Error downloading {full_url}: {e}")
+        return None
 
     # Save the content to a file
     filename = f"tmp/gfs_{hour_str}.grb2"
@@ -56,6 +57,7 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
         except Exception as exc:
             print(f"Hour {hour} generated an exception: {exc}")
         else:
-            print(f"Hour {hour} file downloaded: {result}")
+            if result:
+                print(f"Hour {hour} file downloaded: {result}")
 
 print("All files downloaded successfully.")
