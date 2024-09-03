@@ -34,11 +34,9 @@ struct ResponseData {
 }
 
 fn open_new_window_with_query_params(window: Window, resp: ResponseData) {
-    // Serialize the response data to JSON and then URL encode it
     let data_json = to_string(&resp).expect("Failed to serialize data");
     let encoded_data = urlencoding::encode(&data_json);
 
-    // Create a new window with the serialized data in the query parameters
     let url = format!("map.html?data={}", encoded_data);
 
     let new_window = WindowBuilder::new(
@@ -61,7 +59,7 @@ fn map(window: Window, data: RequestData) -> Result<(), String> {
     println!("Sending request to server...");
 
     let response = match client
-        .post("http://127.0.0.1:5000/map")  // Update with your Flask server URL
+        .post("http://127.0.0.1:5000/map")  
         .json(&data)
         .send()
     {
@@ -76,9 +74,9 @@ fn map(window: Window, data: RequestData) -> Result<(), String> {
     // let response_text = response.text().expect("Failed to read response text");
     // println!("Raw response: {response_text:?}");
 
-    // let sx:ResponseData = response.json().expect("??????//");
+    // let sgx:ResponseData = response.json().expect("??????//");
 
-    // println!("{sx:?}");
+    // println!("{sgx:?}");
 
     let response_data: ResponseData = match response.json() {
         Ok(data) => data,

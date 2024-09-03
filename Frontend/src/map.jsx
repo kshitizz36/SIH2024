@@ -6,12 +6,10 @@ import { MapContainer, TileLayer, Polyline, Marker, Popup } from "react-leaflet"
 function Map() {
   const [data, setData] = useState(null);
 
-  // Function to get query parameters from the URL
   function getQueryParams() {
     return new URLSearchParams(window.location.search);
   }
 
-  // Function to parse the data from the query parameters
   function parseDataFromQuery() {
     const params = getQueryParams();
     const encodedData = params.get("data");
@@ -27,7 +25,6 @@ function Map() {
     return null;
   }
 
-  // useEffect to run when the component mounts
   useEffect(() => {
     const parsedData = parseDataFromQuery();
     if (parsedData) {
@@ -35,13 +32,11 @@ function Map() {
     }
   }, []);
 
-  // Convert the path data into an array of LatLng tuples for Leaflet
   const route = data && data.path ? data.path.map(([lat, lon]) => [lat, lon]) : [];
   console.log(data);
 
   return (
     <div className="relative w-full h-screen">
-      {/* MapContainer with z-index adjusted */}
       <MapContainer
         center={[20.593, 78.962]}
         zoom={5}
@@ -53,7 +48,6 @@ function Map() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
-        {/* Draw the route on the map using Polyline */}
         {route.length > 0 && (
           <>
             <Polyline positions={route} color="blue" />

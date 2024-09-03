@@ -8,8 +8,8 @@ import shipTypesData from './data/ship_data.json'
 
 function App() {
 
-  const [Start, setStart] = useState([0.34534534,2.34534534534]);
-  const [End, setEnd] = useState([2.879438579,0.8927498273]);
+  const [Start, setStart] = useState([22.535744,88.299581]);
+  const [End, setEnd] = useState([22.535744,88.299581]);
   const [Shipdata, setShipdata] = useState({})
 
   const putstart = (e) => {

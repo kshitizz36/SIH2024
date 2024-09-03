@@ -13,16 +13,16 @@ num_edges = G.number_of_edges()
 print(f"Number of nodes: {num_nodes}")
 print(f"Number of edges: {num_edges}")
 
-# Plotting the graph using Matplotlib with tooltips
+
 plt.figure(figsize=(12, 8))
 
-# Get positions from node attributes
+
 pos = nx.get_node_attributes(G, 'pos')
 
-# Draw the nodes and edges
+
 nx.draw(G, pos, node_size=10, node_color='red', edge_color='blue', with_labels=False, font_weight='bold', alpha=0.7)
 
-# Add tooltips using mplcursors
+
 cursor = mplcursors.cursor(hover=True)
 
 @cursor.connect("add")
@@ -43,6 +43,5 @@ def on_add(sel):
     sel.annotation.set_text(tooltip_text)
     sel.annotation.get_bbox_patch().set(fc="yellow", alpha=0.8)
 
-# Show the plot with tooltips
 plt.title("Graph of Indian Ocean Nodes and Edges with Wind Data")
 plt.show()
