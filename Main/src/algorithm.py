@@ -9,6 +9,7 @@ from datetime import timedelta, datetime
 import folium
 from scipy.interpolate import CubicSpline
 import json
+import os
 
 
 json_input = '''
@@ -39,7 +40,9 @@ ship_load = input_data['ship']['Load']
 ship_beam = input_data['ship']['Beam']
 
 
-with open('/home/cryptodarth/Cryptd/Smart-India-Hackathon-2024/Main/data/indian_ocean_graph_with_wind.pickle', 'rb') as f:
+file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'indian_ocean_graph_with_wind.pickle'))
+
+with open(file_path, 'rb') as f:
     G = pickle.load(f)
 
 

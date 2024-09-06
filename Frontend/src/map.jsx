@@ -66,7 +66,8 @@ function Map() {
         <p className="text-sm font-medium">ETA : {Math.floor(data['eta'])} Hrs.</p>
         {/* <p className="text-sm font-medium">Estimated Fuel Usage : {data['fuel']}</p> */}
         <p className="text-sm font-medium">Distance : {Math.floor(data['km'])} KMs</p>
-      </div>)}
+      </div>
+    )}
     </div>
   );
 }
