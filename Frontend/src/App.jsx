@@ -93,7 +93,7 @@ function App() {
             <hr className="border-t border-gray-300 w-full" />
             <br />
             <>
-              <label className='mb-[10px] block text-base font-medium text-dark dark:text-black'>
+              <label className='mb-[10px] block text-base font-medium text-black dark:text-black'>
                 Starting Port
               </label>
               <div className='relative z-20'>
@@ -111,7 +111,7 @@ function App() {
               </div>
             </>
             <>
-              <label className='mb-[10px] block text-base font-medium text-dark dark:text-black'>
+              <label className='mb-[10px] block text-base font-medium text-black dark:text-black'>
                 Destination Port
               </label>
               <div className='relative z-20'>
@@ -132,7 +132,7 @@ function App() {
             <hr className="border-t border-gray-300 w-full" />
             <br />
             <>
-              <label className='mb-[10px] block text-base font-medium text-dark dark:text-black'>
+              <label className='mb-[10px] block text-base font-medium text-black dark:text-black'>
                 Ship Type
               </label>
               <div className='relative z-20'>

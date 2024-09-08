@@ -265,7 +265,5 @@ def main(start,end):
     x = str(eta.strftime('%Y-%m-%d %H:%M:%S'))
 
     d = [(y, x) for x, y in refined_coords]
-    fc = [start]
-    fc.extend(d)
-    fc.append(end)
-    return [fc,final_time,total_distance,fuel_consumed,map_center]
+
+    return [d,final_time,total_distance,fuel_consumed,map_center]
