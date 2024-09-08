@@ -224,13 +224,13 @@ def find_nearest_node(G, coord):
     return closest_node
 
 
-def main(start,end):
+def main(start,end,ss=15):
 
     start_port = tuple(start[::-1])  
     end_port = tuple(end[::-1])
     source_node = find_nearest_node(G, start_port)
     destination_node = find_nearest_node(G, end_port)
-
+    base_speed = ss
     shortest_path, cumulative_times, total_distance, fuel_consumed = astar_path(G, source_node, destination_node, base_speed, start_time, ship_displ, ship_power, ship_load, ship_beam)
 
     final_time = cumulative_times[-1] if cumulative_times else 0  # time in hrs

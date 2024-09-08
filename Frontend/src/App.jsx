@@ -14,11 +14,26 @@ function App() {
 
   const [Start, setStart] = useState([22.535744, 88.299581]);
   const [End, setEnd] = useState([22.535744, 88.299581]);
-  const [Shipdata, setShipdata] = useState({})
+  const [Shipdata, setShipdata] = useState({
+        "shipType": "Cargo",
+        "Loa": 2414.0,
+        "Draft": 1241.0,
+        "Displ": 2414.0,
+        "Power": 440.0,
+        "Load": 2200.0,
+        "Speed": 15.0,
+        "Beam": 30.0
+      })
   const [data, setData] = useState({});
   const [route, setRoute] = useState([]);
   const [init, setInit] = useState(true)
 
+  const changeShipDet = (e,type) =>{
+    const st = Shipdata;
+    st[type] = e.target.value;
+    console.log(st);
+    setShipdata(st);
+  }
   const putstart = (e) => {
     const selectedCoords = e.target.value.split(',').map(Number);
     setStart(selectedCoords);
@@ -33,16 +48,7 @@ function App() {
     const data = {
       "start": Start,
       "end": End,
-      "ship": {
-        "shipType": "Cargo",
-        "Loa": 2414.0,
-        "Draft": 1241.0,
-        "Displ": 2414.0,
-        "Power": 440.0,
-        "Load": 2200.0,
-        "Speed": 15.0,
-        "Beam": 30.0
-      }
+      "ship": Shipdata
     }
     console.log("Sending request to server...");
 
@@ -225,6 +231,7 @@ function App() {
                 type='text'
                 placeholder='Default Input'
                 className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 '
+                onChange={(e)=>{changeShipDet(e,'Speed')}}
               />
             </>
             <br />

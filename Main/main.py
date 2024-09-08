@@ -7,9 +7,9 @@ CORS(app)
 @app.route('/map', methods=['POST'])
 def get_user_input():
     user_input = request.json 
-    print("Received user input:", user_input) 
+    print("Received user input:\n\n", user_input,"\n\n\n") 
 
-    x = algorithm.main(user_input['start'],user_input['end'])
+    x = algorithm.main(user_input['start'],user_input['end'],float(user_input['ship']['Speed']))
 
     
     result = {
