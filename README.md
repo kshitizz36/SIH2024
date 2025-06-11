@@ -2,6 +2,20 @@
 Creovate's Submission for SIH'24 
 
 
+## 📸 Application Screenshots
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/895e3429-23f8-44f5-b8ff-564fec4cdb77" alt="Ship Routing Interface" width="600"/>
+  <br/>
+  <em>Main routing interface showing ship route optimization</em>
+</div>
+<br/>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/79aa259f-6404-4451-ab30-56aa6c110503" alt="Route Visualization" width="600"/>
+  <br/>
+  <em>Advanced route visualization with environmental data overlay</em>
+</div>
+
+
 # Ship Routing Optimization System
 
 A full-stack Ship Routing Optimization System designed to enhance navigational accuracy and adaptive routing for maritime operations. This system leverages advanced algorithms and real-time environmental data to provide optimized ship routes, achieving significant improvements in travel efficiency and cost reduction.
