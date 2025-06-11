@@ -40,6 +40,9 @@ This project addresses the critical challenge of optimizing ship routes by imple
 
 ## 🏗️ System Architecture
 
+<img width="1194" alt="image" src="https://github.com/user-attachments/assets/e149b615-232d-4d94-bd27-5099fe280d61" />
+
+
 ```
 ┌─────────────────┐    HTTP/API    ┌──────────────────┐
 │   Frontend      │◄──────────────►│    Backend       │
